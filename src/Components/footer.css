@@ -1,1 +1,45 @@
+.footer-mn-cls{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.footer-col-text-cls{
+    text-align: left;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    margin-left: 25px;
+}
+
+.Icon-mn-cls{
+    display: flex;
+    flex-direction: row;
+    /* margin: 15px; */
+    justify-content: left;
+}
+
+.gmailIcon-cls{
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.linkedinIcon-cls{
+    margin: auto;
+    margin-left: 14px;
+    margin-right: 5px;
+}
+
+.githubIcon-cls{
+    margin: auto;
+    margin-left: 5px;
+}
+
 
