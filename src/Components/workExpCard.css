@@ -1,0 +1,13 @@
+.workexp-title-cls{
+    font-size: large;
+    margin: 50px;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.workexp-tl-cls {
+    scroll-margin-top: 120px;
+}

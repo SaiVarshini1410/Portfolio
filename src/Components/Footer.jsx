@@ -11,9 +11,9 @@ function Footer() {
         Want to collaborate?
       </div>
       <div className='Icon-mn-cls'>
-        <img src = { gmailIcon } alt = "gmail.png" width = '20' height = '20' className = 'gmailIcon-cls'/>
-        <img src = { linkedinIcon } alt = "linkedinIcon" width = '20' height = '20' className = 'linkedinIcon-cls'/>
-        <img src = { githubIcon } alt = "githubIcon" width = '50' height = '50' className = 'githubIcon-cls'/>
+        <a href = 'mailto:saivarshini1410@gmail.com' target='__blank'><img src = { gmailIcon } alt = "gmail.png" width = '20' height = '20' className = 'gmailIcon-cls'></img></a>
+        <a href = 'https://www.linkedin.com/in/saivarshinithupakula/' target='__blank'><img src = { linkedinIcon } alt = "linkedinIcon" width = '20' height = '20' className = 'linkedinIcon-cls'/></a>
+        <a href = 'https://github.com/SaiVarshini1410' target='__blank'><img src = { githubIcon } alt = "githubIcon" width = '50' height = '50' className = 'githubIcon-cls'/></a>
       </div>
     </div>
   )

@@ -1,0 +1,20 @@
+[
+    {
+        "experience" : "Working as a Backend developer for IBM's Data Resiliency - Spectrum Protect Plus, a key revenue-generating product, utilizing Java and Spring. Optimized API execution by implementing a caching mechanism, improving the SLA by 3.7%. Migrated the PostgreSQL database to MongoDB and deployed it to production successfully. Integrated and maintained BIRT reports, a data visualization tool, within the product to display comprehensive usage data and the services utilized by customers. Actively contributed to identifying, analyzing, and resolving product vulnerabilities, ensuring security and reliability. Responsible for directly interacting and working with prime customers and ensuring timely releases from our side.",
+        "role" : "Software developer",
+        "company" : "IBM-ISDL",
+        "timeline" : "August 2023 - Present"
+    },
+    {
+        "experience" : "Worked as a Software Developer Intern at IBM India Systems Development Lab. Developed team-wide machine management tool, optimizing resource utilization. Utilized React.js (frontend), Node.js (backend), and MySql (database). Integrated multiple mini tools using python scripting. Deployed the app on provisioned virtual machine with docker-compose. Also, contributed to internal automation framework (CBA) for process optimization.",
+        "role" : "Software developer Intern",
+        "company" : "IBM-ISDL",
+        "timeline" : "Jan 2023 - July 2023"
+    },
+    {
+        "experience" : "Worked as a Machine Learning Intern. Implemented the Random Forest model to predict the prices of used cars with a team of 3 people. We have achieved the accuracy of 93%.",
+        "role" : "Chief executive officer",
+        "company" : "Verzeo",
+        "timeline" : "June 2020 - August 2020"
+    }
+]
