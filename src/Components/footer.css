@@ -1,10 +1,10 @@
 .footer-mn-cls{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     /* position: fixed; */
     bottom: 0;
-    width: 95.7%;
-    margin: 10px 10px 0px 10px;
+    /* width: 100%; */
+    margin: 10px 10px 00px 10px;
     padding: 20px;
     border-radius: 20px;
 }
