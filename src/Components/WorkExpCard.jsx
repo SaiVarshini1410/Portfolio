@@ -25,7 +25,7 @@ function CustomizedTimeline() {
                     <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
                     variant="body2"
-                    color="text.secondary"
+                    color="white"
                     >
                     {item.timeline}
                     </TimelineOppositeContent>
