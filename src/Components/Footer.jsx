@@ -3,6 +3,7 @@ import './footer.css'
 import gmailIcon from '../assets/gmail.png'
 import linkedinIcon from '../assets/linkedin.png'
 import githubIcon from '../assets/github.png'
+// import './responsive-updates.css'
 
 function Footer() {
   return (

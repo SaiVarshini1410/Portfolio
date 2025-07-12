@@ -1,19 +1,59 @@
+/* Profile Section - Full viewport height */
+.profile-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .profileCard-mn-cls{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: auto;
-    padding: auto;
-    margin-left: 50px;
-    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profileCard-mn-cls:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .profileCard-img-cls{
-    width: 235px;
-    height: 235px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    margin: auto;
+    object-fit: cover;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .profileCard-mn-cls {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profileCard-img-cls {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profileCard-mn-cls {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profileCard-img-cls {
+        width: 180px;
+        height: 180px;
+    }
 }

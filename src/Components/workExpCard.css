@@ -1,13 +1,126 @@
+/* Work Experience Section - Full viewport height */
+.workexp-tl-cls {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    scroll-margin-top: 120px;
+}
+
 .workexp-title-cls{
-    font-size: large;
+    font-size: 2.5rem;
     margin: 50px;
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: italic;
-    font-size: 30px;
+    text-align: center;
+    color: white;
 }
 
-.workexp-tl-cls {
-    scroll-margin-top: 120px;
+/* Timeline container styling */
+.MuiTimeline-root {
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Timeline item styling */
+.MuiTimelineItem-root {
+    margin: 20px 0;
+}
+
+/* Timeline content styling */
+.MuiTimelineContent-root {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px !important;
+    margin: 10px 0;
+    /* box-shadow:
+        inset 0 -1em 3em rgba(255, 255, 255, 0.2),
+        0.3em 0.3em 1em rgba(255, 255, 255, 0.2); */
+    color: white;
+}
+
+/* Timeline opposite content styling */
+.MuiTimelineOppositeContent-root {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Timeline dot styling */
+.MuiTimelineDot-root {
+    background-color: #1976d2;
+    border: 3px solid white;
+    /* box-shadow: 0 0 15px rgba(25, 118, 210, 0.5); */
+}
+
+/* Timeline connector styling */
+.MuiTimelineConnector-root {
+    background-color: white;
+    width: 3px;
+}
+
+/* Typography styling */
+.MuiTypography-h6 {
+    color: #ff6b6b !important;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.MuiTypography-body1 {
+    color: #e0e0e0 !important;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .workexp-title-cls {
+        font-size: 2rem;
+        margin: 30px;
+    }
+    
+    .MuiTimelineContent-root,
+    .MuiTimelineOppositeContent-root {
+        padding: 15px !important;
+        margin: 5px 0;
+    }
+    
+    .MuiTypography-h6 {
+        font-size: 1.1rem;
+    }
+    
+    .MuiTypography-body1 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .workexp-title-cls {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+    
+    .MuiTimelineContent-root,
+    .MuiTimelineOppositeContent-root {
+        padding: 10px !important;
+    }
+    
+    .MuiTypography-h6 {
+        font-size: 1rem;
+    }
+    
+    .MuiTypography-body1 {
+        font-size: 0.8rem;
+    }
 }

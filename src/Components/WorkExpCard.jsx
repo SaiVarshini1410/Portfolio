@@ -10,6 +10,7 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import Typography from '@mui/material/Typography';
 import workExpJson from '../Utils/workExperience.json';
 import './workExpCard.css'
+// import './responsive-updates.css'
 
 function CustomizedTimeline() {
 

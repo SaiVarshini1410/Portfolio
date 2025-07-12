@@ -1,17 +1,53 @@
+/* About Me Section - Full viewport height */
+.about-me-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .card-mn-cls{
-    height: 250px;
-    width: 75%;
+    height: auto;
+    min-height: 300px;
+    width: 90%;
+    max-width: 1200px;
     color: white;
     background-color: black;
     margin: auto;
-    margin-right: 20px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 50px;
+    border-radius: 20px;
+    box-shadow:
+        inset 0 -1em 3em rgba(255, 255, 255, 0.2),
+        0.3em 0.3em 1em rgba(255, 255, 255, 0.2);
 }
 
 .aboutMeCard-mn-cls{
-    padding: 20px;
+    padding: 40px;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .card-mn-cls {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    .aboutMeCard-mn-cls {
+        padding: 30px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMeCard-mn-cls {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
 }

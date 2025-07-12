@@ -1,0 +1,214 @@
+/* responsive-updates.css - Add these styles to your existing CSS files or create as a global stylesheet */
+
+/* Global container updates for full-screen desktop view */
+@media (min-width: 1024px) {
+    
+    /* Header updates - Keep original layout but improve sizing */
+    .header-mn-cls {
+        margin: 0px 0px 10px 0px;
+        border-radius: 0;
+        padding: 30px 40px;
+    }
+    
+    .pacifico-regular {
+        font-size: 2rem;
+    }
+    
+    .header-rt-ele {
+        font-size: 1.2rem;
+        margin-right: 50px;
+    }
+
+    /* Profile Card updates - Keep original layout */
+    .profileCard-mn-cls {
+        margin: 50px auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* About Me Card updates - Full width but keep original height */
+    .card-mn-cls {
+        width: 95%;
+        max-width: 1200px;
+        margin: 50px auto;
+        height: auto;
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    .aboutMeCard-mn-cls {
+        padding: 30px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /* Skills updates - Keep original layout, just improve spacing */
+    .skills-mn-cls {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .skills-title-cls {
+        font-size: 2.5rem;
+        margin: 50px;
+    }
+
+    .skills-icon-cls {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .skills-icon-sb-cls-1,
+    .skills-icon-sb-cls-2 {
+        margin: 20px;
+        height: 120px;
+    }
+
+    .skills-icon-ele {
+        height: 120px;
+    }
+
+    .skills-icon-ele img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Work Experience updates - Keep original layout */
+    .workexp-tl-cls {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .workexp-title-cls {
+        font-size: 2.5rem;
+        margin: 50px;
+    }
+
+    /* Projects updates - Keep original layout */
+    .projectCard-mn-cls {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .projectCard-title-cls {
+        font-size: 2.5rem;
+        margin: 50px;
+    }
+
+    .carousel-inner {
+        max-width: 90%;
+        padding: 40px;
+    }
+
+    .carasoul-project-title-cls {
+        font-size: 1.8rem;
+    }
+
+    .carasoul-project-desc-cls {
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+    /* Footer updates - Keep original layout */
+    .footer-mn-cls {
+        margin: 10px 0px 0px 0px;
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    .footer-col-text-cls {
+        font-size: 1.3rem;
+        margin-left: 25px;
+    }
+
+    .Icon-mn-cls {
+        margin-left: 30px;
+    }
+
+    .gmailIcon-cls,
+    .linkedinIcon-cls,
+    .githubIcon-cls {
+        width: 30px;
+        height: 30px;
+    }
+
+    .gmailIcon-cls:hover,
+    .linkedinIcon-cls:hover,
+    .githubIcon-cls:hover {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .pacifico-regular {
+        font-size: 1.8rem;
+    }
+
+    .skills-title-cls,
+    .workexp-title-cls,
+    .projectCard-title-cls {
+        font-size: 2rem;
+    }
+
+    .card-mn-cls {
+        width: 90%;
+    }
+
+    .header-rt-ele {
+        font-size: 1.1rem;
+        margin-right: 30px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .pacifico-regular {
+        font-size: 1.5rem;
+    }
+
+    .skills-title-cls,
+    .workexp-title-cls,
+    .projectCard-title-cls {
+        font-size: 1.8rem;
+    }
+
+    .card-mn-cls {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .header-rt-ele {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+}
+
+/* Smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section spacing */
+.section-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Animation for smooth transitions */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
