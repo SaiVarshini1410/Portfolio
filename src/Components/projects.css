@@ -1,0 +1,277 @@
+.projectCard-mn-cls {
+    margin: 10px;
+  }
+  
+  .projectCard-title-cls {
+    font-family: "Satoshi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+  }
+  
+  .carasoul-mn-cls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+    /* border: solid; */
+    /* border-color: white; */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow:
+    inset 0 -1em 3em rgba(255, 255, 255, 0.2),
+    0.3em 0.3em 1em rgba(255, 255, 255, 0.2);
+  }
+  
+  .carousel-item {
+    width: 100%;
+    display: none;
+  }
+  .carousel-item.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .carousel-content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .carasoul-img-cls {
+    /* flex: 0 0 auto; */
+    width: 50%; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #fff; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .carasoul-img-cls img {
+    width: 40%;      
+    height: 450px;  
+    /* object-fit: cover; */
+    border-radius: 10px;
+    /* margin-bottom: 40px; */
+  }
+  
+  .carasoul-img-desc-cls {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: red;
+    /* margin-top: 50px; */
+  }
+  
+  .carasoul-desc-cls {
+    flex: 1 1 auto;
+    display: flex;
+    width: 50%;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding: 1rem; */
+    font-size: 1.1rem;
+    /* background: #f5f5f5; */
+    border-radius: 4px;
+    min-height: 200px;
+    text-align: center;
+    /* height: 500px; */
+  }
+  
+  .carasoul-btn-cls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  button:hover {
+    color: red;
+  }
+  
+  .projectCard-secondary-cls {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .projectCard-list-cls {
+    width: 50%;
+    text-align: center;
+    border: solid;
+    border-color: white;
+    padding-top: 30px;
+  }
+  
+  .projectCard-list-items-cls {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .carasoul-desc-cls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px; 
+    /* padding: 1rem; */
+    /* background: white; */
+  }
+  
+  .carasoul-project-title-cls {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .carasoul-project-desc-cls {
+    color: violet;
+    margin-top: 0.5rem; 
+    flex-grow: 1;
+    text-align: left;
+    height: 500px;
+    overflow-y: auto; 
+    /* background-color: white; */
+    /* padding-right: 10px; */
+  }
+  
+
+.carasoul-project-desc-cls::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .carasoul-project-desc-cls::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 8px;
+    margin: 0 20px;
+  }
+  
+  .carasoul-project-desc-cls::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 8px;
+  }
+  
+  .carasoul-project-desc-cls::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+  
+
+  .carasoul-project-title-cls {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .carasoul-project-title-cls > div:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+  }
+  
+  .project-github-img,
+  .project-hosted-img {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; 
+  }
+  
+  .project-github-img img,
+  .project-hosted-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  /* .project-hosted-img img{
+    height: 60px;
+    width: 60px;
+    margin-left: -10px;
+  } */
+  
+  .project-github-img a,
+  .project-hosted-img a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .project-github-img a:hover,
+  .project-hosted-img a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .carousel-inner {
+      max-width: 100%;
+    }
+    .carousel-content-row {
+      gap: 1rem;
+    }
+    .carasoul-img-cls {
+      width: 300px;
+      height: 350px;
+    }
+    .carasoul-img-cls img {
+      width: 300px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-content-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .carasoul-img-cls,
+    .carasoul-img-cls img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .carasoul-desc-cls {
+      width: 100%;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

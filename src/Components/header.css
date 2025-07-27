@@ -10,6 +10,7 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
+    z-index: 1;
 }
 .pacifico-regular {
     font-family: "Pacifico", serif;
@@ -36,11 +37,11 @@ a{
 
 .header-rt-ele{
     margin-right: 40px;
-    font-family: "Sixtyfour", serif;
+    font-family: "Pacifico", serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-size: 12px;
+    font-size: 17px;
     cursor: pointer;
     font-variation-settings:
       "BLED" 0,
