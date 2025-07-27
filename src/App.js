@@ -8,6 +8,8 @@ import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Loading from './Components/Loading';
 import { useState,useEffect } from 'react';
+import Recognition from './Components/Recognition';
+import './Components/responsive-updates.css'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +35,7 @@ function App() {
       </div>
       <Skills/>
       <Projects/>
+      <Recognition/>
       <Footer/>
     </div>
   );

@@ -4,10 +4,13 @@ import github from '../assets/github.png';
 import rocket from '../assets/rocket.png'
 import './projects.css'
 import {projectsJson} from '../Utils/projects'
+// import './responsive-updates.css'
+
 
 function Projects() {
 
     return (
+      <div className='projectCard-mn-cls'>
         <div id="carasoulMain-Id" class="carousel slide" data-ride="carousel">
           <div className='projectCard-title-cls'>
             Projects
@@ -58,6 +61,7 @@ function Projects() {
               <span class="sr-only">Next</span>
           </a>
           </div>
+        </div>
         </div>
     );
 }

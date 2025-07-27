@@ -23,9 +23,12 @@ import shell from '../assets/shell.png';
 import springBoot from '../assets/springBoot.png';
 import tableau from '../assets/tableau.png';
 import { useEffect, useState } from 'react';
+// import './responsive-updates.css'
+
 
 function Skills() {
-  const [tooltip, setTooltip] = useState('');
+  const [activeTooltip, setActiveTooltip] = useState(null);
+
   const skillsArray = [
     { src: cpp, alt: "C++" },
     { src: css, alt: "CSS" },
@@ -34,7 +37,7 @@ function Skills() {
     { src: git, alt: "Git" },
     { src: github, alt: "GitHub" },
     { src: html, alt: "HTML" },
-    { src: java, alt: "Java" },
+    { src: react, alt: "React" },
     { src: javascript, alt: "JavaScript" },
   ];
   const skillsArray2 = [
@@ -85,8 +88,16 @@ useEffect(() => {
         <div className='skills-icon-sb-cls-1'>
           {
             skillsArray.map((skill, index) => (
-              <div key={index} className='skills-icon-ele'>
+              <div 
+                key={index} 
+                className='skills-icon-ele'
+                onMouseEnter={() => setActiveTooltip(skill.alt)} 
+                onMouseLeave={() => setActiveTooltip(null)} 
+              >
                 <img src={skill.src} alt={skill.alt} />
+                {activeTooltip === skill.alt && ( 
+                  <span className="skill-tooltip">{skill.alt}</span>
+                )}
               </div>
             ))
           }
@@ -94,8 +105,16 @@ useEffect(() => {
         <div className='skills-icon-sb-cls-2'>
           {
             skillsArray2.map((skill, index) => (
-              <div key={index} className='skills-icon-ele'>
+              <div 
+                key={index} 
+                className='skills-icon-ele'
+                onMouseEnter={() => setActiveTooltip(skill.alt)} 
+                onMouseLeave={() => setActiveTooltip(null)} 
+              >
                 <img src={skill.src} alt={skill.alt}/>
+                {activeTooltip === skill.alt && ( 
+                  <span className="skill-tooltip">{skill.alt}</span>
+                )}
               </div>
             ))
           }

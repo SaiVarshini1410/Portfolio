@@ -1,14 +1,406 @@
-.workexp-title-cls{
-    font-size: large;
+.workexp-tl-cls {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    scroll-margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.workexp-tl-cls::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(25, 118, 210, 0.1) 0%, 
+        rgba(255, 107, 107, 0.1) 25%, 
+        rgba(138, 43, 226, 0.1) 50%, 
+        rgba(255, 20, 147, 0.1) 75%, 
+        rgba(25, 118, 210, 0.1) 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.workexp-title-cls {
+    font-size: 2.5rem;
     margin: 50px;
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: italic;
-    font-size: 30px;
     text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 1;
+    font-family: 'Nuninto', sans-serif;
+    font-size: 60px !important;
 }
 
-.workexp-tl-cls {
-    scroll-margin-top: 120px;
+.MuiTimeline-root {
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
+
+.MuiTimelineItem-root {
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInUp 0.8s ease forwards;
+    animation-delay: calc(var(--item-index, 0) * 0.2s);
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.MuiTimelineContent-root {
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.9) 0%, 
+        rgba(25, 25, 25, 0.95) 100%);
+    border-radius: 20px !important;
+    padding: 25px !important;
+    margin: 15px 0;
+    box-shadow:
+        inset 0 -1em 3em rgba(255, 255, 255, 0.1),
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    text-align: left !important;
+}
+
+.MuiTimelineContent-root::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.MuiTimelineContent-root:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow:
+        inset 0 -1em 3em rgba(255, 255, 255, 0.15),
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.MuiTimelineContent-root::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
+    background-size: 400% 400%;
+    border-radius: 22px;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: gradientBorder 3s ease infinite;
+}
+
+.MuiTimelineContent-root:hover::after {
+    opacity: 0.7;
+}
+
+@keyframes gradientBorder {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.MuiTimelineOppositeContent-root {
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 15px !important;
+    padding: 20px !important;
+    margin: 15px 0;
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.1rem !important;
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.MuiTimelineOppositeContent-root:hover {
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(255, 255, 255, 0.15) 100%);
+    transform: scale(1.05);
+}
+
+.MuiTimelineDot-root {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: 4px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 
+        0 0 25px rgba(102, 126, 234, 0.6),
+        inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: pulse 2s ease-in-out infinite;
+    margin: 0 !important;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 25px rgba(102, 126, 234, 0.6);
+    }
+    50% { 
+        transform: scale(1.1);
+        box-shadow: 0 0 35px rgba(102, 126, 234, 0.8);
+    }
+}
+
+.MuiTimelineDot-root:hover {
+    transform: scale(1.2) !important;
+    box-shadow: 0 0 40px rgba(102, 126, 234, 0.9) !important;
+    animation-play-state: paused;
+}
+
+.MuiTimelineDot-root svg {
+    color: white !important;
+    font-size: 1.6rem !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    display: block !important;
+    margin: 0 !important;
+}
+
+.MuiTimelineSeparator-root {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+}
+
+.MuiTimelineConnector-root {
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.6) 0%, 
+        rgba(102, 126, 234, 0.8) 50%, 
+        rgba(255, 255, 255, 0.6) 100%) !important;
+    width: 4px !important;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+    position: relative;
+    flex: 1 !important;
+    min-height: 20px !important;
+}
+
+.MuiTimelineConnector-root::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.8) 50%, 
+        transparent 100%);
+    transform: translateX(-50%);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.MuiTypography-h6 {
+    color: #ff6b6b !important;
+    font-weight: bold !important;
+    font-size: 1.4rem !important;
+    margin-bottom: 15px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left !important;
+}
+
+.MuiTypography-h6::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b6b, transparent);
+    border-radius: 1px;
+}
+
+.MuiTypography-body1 {
+    color: #e8e8e8 !important;
+    line-height: 1.7 !important;
+    margin-top: 15px !important;
+    font-size: 1rem !important;
+    text-align: left !important;
+}
+
+.MuiTimelineContent-root ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-top: 15px !important;
+}
+
+.MuiTimelineContent-root li {
+    position: relative;
+    padding-left: 25px !important;
+    margin-bottom: 10px !important;
+    color: #f0f0f0 !important;
+    transition: all 0.3s ease;
+}
+
+.MuiTimelineContent-root li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4ecdc4;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.MuiTimelineContent-root li:hover {
+    color: #ffffff !important;
+    transform: translateX(5px);
+}
+
+.MuiTimelineContent-root li:hover::before {
+    color: #ff6b6b;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .workexp-title-cls {
+        font-size: 2rem;
+        margin: 30px;
+    }
+    
+    .MuiTimelineItem-root {
+        margin: 20px 0;
+    }
+    
+    .MuiTimelineContent-root,
+    .MuiTimelineOppositeContent-root {
+        padding: 20px !important;
+        margin: 10px 0;
+        border-radius: 15px !important;
+    }
+    
+    .MuiTimelineDot-root {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .MuiTimelineDot-root svg {
+        font-size: 1.4rem !important;
+    }
+    
+    .MuiTimelineSeparator-root {
+        margin-right: 12px !important;
+        margin-left: 12px !important;
+    }
+    
+    .MuiTypography-h6 {
+        font-size: 1.2rem !important;
+    }
+    
+    .MuiTypography-body1 {
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .workexp-title-cls {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+    
+    .MuiTimelineContent-root,
+    .MuiTimelineOppositeContent-root {
+        padding: 15px !important;
+        border-radius: 12px !important;
+    }
+    
+    .MuiTimelineDot-root {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .MuiTimelineDot-root svg {
+        font-size: 1.2rem !important;
+    }
+    
+    .MuiTimelineSeparator-root {
+        margin-right: 8px !important;
+        margin-left: 8px !important;
+    }
+    
+    .MuiTypography-h6 {
+        font-size: 1.1rem !important;
+    }
+    
+    .MuiTypography-body1 {
+        font-size: 0.9rem !important;
+    }
+    
+    .MuiTimelineContent-root li {
+        padding-left: 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .MuiTimelineItem-root:nth-child(1) { animation-delay: 0.1s; }
+    .MuiTimelineItem-root:nth-child(2) { animation-delay: 0.3s; }
+    .MuiTimelineItem-root:nth-child(3) { animation-delay: 0.5s; }
+    .MuiTimelineItem-root:nth-child(4) { animation-delay: 0.7s; }
+    .MuiTimelineItem-root:nth-child(5) { animation-delay: 0.9s; }
+}
+
