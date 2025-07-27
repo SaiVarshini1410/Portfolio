@@ -1,69 +1,66 @@
-.footer-mn-cls{
-    background-color: black;
-    color: white;
-    /* position: fixed; */
+.footer-mn-cls {
+    background-color: white;
+    color: black;
     bottom: 0;
-    width: 95.7%;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0 10px;
     padding: 20px;
     border-radius: 20px;
-}
-
-.footer-col-text-cls{
+  }
+  
+  .footer-col-text-cls {
     text-align: left;
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
     font-size: medium;
     margin-left: 25px;
-}
-
-.Icon-mn-cls{
+  }
+  
+  .Icon-mn-cls {
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin-bottom: 15px;
     height: 33px;
-}
-
-.gmailIcon-cls{
+  }
+  
+  .gmailIcon-cls {
     margin: auto;
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 16px;
     transition: width 0.5s, height 0.5s;
-}
-
-.linkedinIcon-cls{
+  }
+  
+  .linkedinIcon-cls {
     margin: auto;
     margin-left: 14px;
     margin-right: 5px;
     margin-top: 16px;
     transition: width 0.5s, height 0.5s;
-}
-
-.githubIcon-cls{
+  }
+  
+  .githubIcon-cls {
     margin: auto;
     margin-left: 15px;
     margin-top: 12px;
     width: 25px;
     height: 25px;
     transition: width 0.5s, height 0.5s;
-}
-
-.gmailIcon-cls:hover{
+  }
+  
+  .gmailIcon-cls:hover {
     width: 32px;
     height: 32px;
-}
-
-.linkedinIcon-cls:hover{
+  }
+  
+  .linkedinIcon-cls:hover {
     width: 32px;
     height: 32px;
-}
-
-.githubIcon-cls:hover{
+  }
+  
+  .githubIcon-cls:hover {
     width: 32px;
     height: 32px;
-}
-
-
+  }
+  

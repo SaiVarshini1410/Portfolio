@@ -1,6 +1,3 @@
-/* projects.css */
-
-/* Main container for the projects section */
 .projectCard-mn-cls {
   text-align: center;
   margin-top: 100px;
@@ -12,73 +9,68 @@
   scroll-margin-top: 70px;
 }
 
-/* Title styling for the projects section */
 .projectCard-title-cls {
-  font-family: "Rubik", serif; /* Consistent font family with other titles */
+  font-family: 'Nuninto', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-size: 30px; /* Consistent font size with other titles */
-  margin: 50px; /* Consistent margin */
+  font-size: 60px !important;
+  margin: 50px;
   text-align: center;
-  color: white; /* Consistent text color */
+  color: white;
 }
 
-/* Carousel main container */
 .carasoul-mn-cls {
   position: relative;
   display: flex;
-  flex-direction: column; /* Changed to column for better control of inner elements */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
-  width: 100%; /* Ensure it takes full width */
-  max-width: 1200px; /* Max width for larger screens, consistent with other components */
-  margin: 0 auto; /* Center the carousel */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Inner carousel content area */
 .carousel-inner {
   display: flex;
   width: 100%;
-  max-width: 90%; /* Adjusted max-width for better spacing */
+  max-width: 90%;
   margin: 0 auto;
   position: relative;
   margin-bottom: 30px;
-  border-radius: 20px; /* Consistent border-radius with other cards */
+  border-radius: 20px;
   padding: 30px;
   box-shadow:
-      inset 0 -1em 3em rgba(255, 255, 255, 0.2),
-      0.3em 0.3em 1em rgba(255, 255, 255, 0.2); /* Consistent box-shadow */
-  background-color: black; /* Consistent background color */
-  color: white; /* Consistent text color */
+    inset 0 -1em 3em rgba(255, 255, 255, 0.2),
+    0.3em 0.3em 1em rgba(255, 255, 255, 0.2);
+  background-color: black;
+  color: white;
 }
 
-/* Individual carousel item */
 .carousel-item {
   width: 100%;
   display: none;
 }
+
 .carousel-item.active {
   display: flex;
-  flex-direction: column; /* Changed to column for better stacking on smaller screens */
+  flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 
-/* Row for content within carousel item (image and description) */
 .carousel-content-row {
   display: flex;
-  flex-direction: row; /* Default to row for larger screens */
+  flex-direction: row;
   align-items: stretch;
   width: 100%;
   gap: 2rem;
 }
 
-/* Image container within carousel item */
 .carasoul-img-cls {
   width: 50%;
-  height: auto; /* Adjusted to auto for better responsiveness */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,14 +78,13 @@
 }
 
 .carasoul-img-cls img {
-  width: 100%; /* Image takes full width of its container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 450px; /* Max height for consistency */
-  object-fit: contain; /* Ensure image fits without cropping */
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
   border-radius: 10px;
 }
 
-/* Description container within carousel item */
 .carasoul-desc-cls {
   flex: 1 1 auto;
   display: flex;
@@ -102,11 +93,10 @@
   width: 50%;
   font-size: 1.1rem;
   min-height: 200px;
-  text-align: left; /* Align text left for readability */
-  height: 500px; /* Fixed height for scrollable content */
+  text-align: left;
+  height: 500px;
 }
 
-/* Project title within description */
 .carasoul-project-title-cls {
   color: red;
   font-weight: bold;
@@ -115,7 +105,7 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 10px; /* Added margin for spacing */
+  margin-bottom: 10px;
 }
 
 .carasoul-project-title-cls > div:first-child {
@@ -125,26 +115,24 @@
   white-space: nowrap;
 }
 
-/* Project description text */
 .carasoul-project-desc-cls {
   color: violet;
   margin-top: 0.5rem;
   flex-grow: 1;
   text-align: left;
-  height: 100%; /* Take full height of parent */
-  overflow-y: auto; /* Enable scrolling for long descriptions */
-  padding-right: 10px; /* Padding for scrollbar */
-  font-family: "Roboto Slab", serif; /* Consistent font family */
-  line-height: 1.8; /* Consistent line height */
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.8;
 }
 
-/* Scrollbar styling for project description */
 .carasoul-project-desc-cls::-webkit-scrollbar {
-  width: 2px; /* Increased width for visibility */
+  width: 2px;
 }
 
 .carasoul-project-desc-cls::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1); /* Lighter track for contrast */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
 
@@ -154,10 +142,9 @@
 }
 
 .carasoul-project-desc-cls::-webkit-scrollbar-thumb:hover {
-  background: darkred; /* Darker on hover */
+  background: darkred;
 }
 
-/* Project links (GitHub, Hosted) */
 .project-github-img,
 .project-hosted-img {
   display: flex;
@@ -167,7 +154,7 @@
 
 .project-github-img img,
 .project-hosted-img img {
-  width: 30px; /* Slightly smaller icons */
+  width: 30px;
   height: 30px;
   object-fit: contain;
 }
@@ -184,7 +171,6 @@
   text-decoration: underline;
 }
 
-/* Carousel navigation buttons */
 button {
   padding: 10px 15px;
   margin: 0 10px;
@@ -196,16 +182,16 @@ button {
   color: white;
   margin-bottom: 40px;
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-button:hover {
-  color: red;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Carousel indicators */
+button:hover {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .carousel-indicators li {
-  background-color: rgba(255, 255, 255, 0.5); /* Lighter indicators */
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -215,129 +201,136 @@ button:hover {
 }
 
 .carousel-indicators li.active {
-  background-color: red; /* Active indicator color */
+  background-color: red;
 }
 
-/* Carousel controls (prev/next) */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%; /* Smaller width for controls */
-  opacity: 0.7; /* Slightly transparent */
+  width: 5%;
+  opacity: 0.7;
   transition: opacity 0.3s ease;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  opacity: 1; /* Full opacity on hover */
+  opacity: 1;
 }
 
-/* Updated carousel navigation icons */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e"); /* Original left arrow */
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e"); /* Mirrored right arrow */
-}
-
-/* Optional: Add styling to make them more distinct */
-.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
   transform: scale(1.1) translateX(-2px);
 }
 
 .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
   transform: scale(1.1) translateX(2px);
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 900px) {
   .carousel-inner {
-      max-width: 95%; /* Increased width for smaller screens */
-      padding: 20px;
+    max-width: 95%;
+    padding: 20px;
   }
+
   .carousel-content-row {
-      gap: 1rem;
+    gap: 1rem;
   }
+
   .carasoul-img-cls {
-      width: 45%; /* Adjusted width */
-      max-height: 350px; /* Max height for images */
+    width: 45%;
+    max-height: 350px;
   }
+
   .carasoul-img-cls img {
-      max-height: 300px;
+    max-height: 300px;
   }
+
   .carasoul-desc-cls {
-      width: 55%; /* Adjusted width */
-      height: auto; /* Auto height for description */
-      min-height: 250px; /* Minimum height */
+    width: 55%;
+    height: auto;
+    min-height: 250px;
   }
+
   .carasoul-project-title-cls {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
+
   .carasoul-project-desc-cls {
-      font-size: 1rem;
-      line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
 @media (max-width: 768px) {
   .projectCard-mn-cls {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
   }
+
   .projectCard-title-cls {
-      font-size: 24px;
-      margin: 30px 15px;
+    font-size: 24px;
+    margin: 30px 15px;
   }
+
   .carousel-content-row {
-      flex-direction: column; /* Stack image and description vertically */
-      gap: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
+
   .carasoul-img-cls,
   .carasoul-desc-cls {
-      width: 100%; /* Full width for stacked elements */
-      height: auto;
-      min-height: unset; /* Remove min-height for better stacking */
+    width: 100%;
+    height: auto;
+    min-height: unset;
   }
+
   .carasoul-img-cls img {
-      max-height: 300px; /* Max height for mobile images */
+    max-height: 300px;
   }
+
   .carasoul-project-title-cls {
-      font-size: 1.2rem;
-      justify-content: center; /* Center title on mobile */
+    font-size: 1.2rem;
+    justify-content: center;
   }
+
   .carasoul-project-desc-cls {
-      font-size: 0.95rem;
-      text-align: center; /* Center description on mobile */
-      height: auto; /* Auto height for description */
-      max-height: 200px; /* Max height for scrollable area on mobile */
+    font-size: 0.95rem;
+    text-align: center;
+    height: auto;
+    max-height: 200px;
   }
+
   .carousel-inner {
-      padding: 20px 15px; /* Adjusted padding for mobile */
+    padding: 20px 15px;
   }
 }
 
 @media (max-width: 480px) {
   .projectCard-title-cls {
-      font-size: 20px;
-      margin: 20px 10px;
+    font-size: 20px;
+    margin: 20px 10px;
   }
+
   .carousel-inner {
-      padding: 15px 10px;
+    padding: 15px 10px;
   }
+
   .carasoul-img-cls img {
-      max-height: 250px;
+    max-height: 250px;
   }
+
   .carasoul-project-title-cls {
-      font-size: 1rem;
+    font-size: 1rem;
   }
+
   .carasoul-project-desc-cls {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
+
   .project-github-img img,
   .project-hosted-img img {
-      width: 25px;
-      height: 25px;
+    width: 25px;
+    height: 25px;
   }
 }

@@ -1,20 +1,56 @@
 [
     {
-        "experience" : "Working as a Backend developer for IBM's Data Resiliency - Spectrum Protect Plus, a key revenue-generating product, utilizing Java and Spring. Optimized API execution by implementing a caching mechanism, improving the SLA by 3.7%. Migrated the PostgreSQL database to MongoDB and deployed it to production successfully. Integrated and maintained BIRT reports, a data visualization tool, within the product to display comprehensive usage data and the services utilized by customers. Actively contributed to identifying, analyzing, and resolving product vulnerabilities, ensuring security and reliability. Responsible for directly interacting and working with prime customers and ensuring timely releases from our side.",
+        "experience" : [
+            "Contributed to one of IBM’s highest revenue-generating products, built using Java and Spring, and became deeply involved in core engineering and architecture overhauls.",
+            "Refactored the application from an OSGi Virgo-based Spring app to a monolith Spring Boot application — a massive shift that simplified complexity, improved stability, and marked the beginning of new system-level learning.",
+            "Played a key role in upgrading the OS to RHEL 9.5 by making the codebase fully compatible and rebuilding the environment from scratch; created a custom ISO, reducing its size from 11 GB to 2 GB (~82%).",
+            "Upgraded WinRM integration for improved remote management, addressing legacy incompatibilities and enhancing automation workflows.",
+            "Migrated all Python scripts from 2.7 and 3.6 to 3.9 — modernizing backup, restore, and diagnostics flows across the product.",
+            "Stepped into critical deployment responsibilities: configured new build servers on RHEL 9.5, set up the entire staging infrastructure, and managed publishing to public repositories — ensuring seamless delivery during a pivotal release.",
+            "Consolidated PostgreSQL data into MongoDB by designing optimized collections, resulting in performance improvements and simplified data handling.",
+            "Improved backend logging with log rotation, increasing efficiency by 7% and making system monitoring more effective.",
+            "Built 3 complete BIRT reports for deep product usage insights and redesigned several legacy reports to be cleaner, more purposeful, and user-friendly.",
+            "Resolved critical product vulnerabilities, resulting in an 11% boost in security posture and a measurable reduction in CVEs.",
+            "Enhanced the Node.js middleware layer, enabling faster UI-backend communication and more responsive user experiences.",
+            "Regularly involved in high-pressure customer situations (critsits), resolving priority blockers within hours and directly contributing to customer retention.",
+            "Collaborated across multiple teams — from QA to packaging to UI — and picked up practices that helped shape my engineering discipline and broaden my system-level thinking.",
+            "Actively participated in WatsonX hackathons, IBM Sangam open-source events, and internal tech forums — learning from diverse teams across the globe and contributing to a vibrant engineering culture."
+        ],
         "role" : "Software developer",
         "company" : "IBM-ISDL",
-        "timeline" : "August 2023 - Present"
+        "timeline" : "August 2023 - Present",
+        "location": "Pune, India"
     },
     {
-        "experience" : "Worked as a Software Developer Intern at IBM India Systems Development Lab. Developed team-wide machine management tool, optimizing resource utilization. Utilized React.js (frontend), Node.js (backend), and MySql (database). Integrated multiple mini tools using python scripting. Deployed the app on provisioned virtual machine with docker-compose. Also, contributed to internal automation framework (CBA) for process optimization.",
+        "experience" :[ 
+            "Built a complete machine management tool from scratch using React.js (frontend), Node.js + MySQL (backend), and Docker for containerization — deployed seamlessly on a virtual machine used by IBM teams for real-time monitoring and configuration of test infrastructure.",
+            "Integrated Python scripts to fetch deep system-level VM insights (CPU, memory, disk stats), improving overall tool capability and efficiency by over 30%, reducing manual lookup time drastically.",
+            "Designed the platform to be fully modular and configurable — incorporated team-specific customizations which made the tool adaptable across different IBM teams with varying needs.",
+            "Collaborated with multiple SMEs, STSMs, and senior architects to gather requirements and refine the UX — earned widespread recognition for the solution’s usability and practical relevance.",
+            "The tool gained traction beyond the initial scope and was adopted by cross-functional teams, becoming part of their standard workflow for test environment management.",
+            "Automated critical test cases for teams working on IBM Storage Protect Plus (SPP) — accelerated their validation workflows, saving hours of manual effort per release cycle.",
+            "Contributed to the enhancement of IBM’s internal automation framework (CBA), optimizing repeated tasks and processes and helping scale automated testing for large-scale environments.",
+            "Gained hands-on experience in full-stack development, containerized deployments, backend API design, and system diagnostics — while closely working in an Agile setup with rapid feedback and iteration cycles.",
+            "Shadowed senior engineers during design reviews and internal product discussions, which offered firsthand exposure to how scalable enterprise tools are conceptualized, pitched, and delivered."
+        ],
         "role" : "Software developer Intern",
         "company" : "IBM-ISDL",
-        "timeline" : "Jan 2023 - July 2023"
+        "timeline" : "Jan 2023 - July 2023",
+        "location": "Pune, India"
     },
     {
-        "experience" : "Worked as a Machine Learning Intern. Implemented the Random Forest model to predict the prices of used cars with a team of 3 people. We have achieved the accuracy of 93%.",
-        "role" : "Chief executive officer",
+        "experience" : [
+            "Took the initiative to kickstart a project predicting used car prices using real-world datasets — led the initial setup including dataset exploration, preprocessing, and model experimentation.",
+            "Implemented a Random Forest algorithm, achieving an accuracy of 93%, and benchmarked it against other models like Decision Trees and Linear Regression to identify the best fit for our scenario.",
+            "Drove feature engineering efforts, transforming raw input into meaningful features that significantly boosted model reliability and predictive power.",
+            "Collaborated closely with a team of interns and full-time engineers — contributed to group brainstorming sessions focused on improving algorithm efficiency and exploring ensemble strategies.",
+            "Explored cross-validation techniques and hyperparameter tuning to ensure model robustness and eliminate overfitting, delivering consistent performance across unseen data.",
+            "Contributed to deployment planning discussions, ensuring the model was designed with scalability and real-world integration in mind, even if not productized during the internship.",
+            "Documented findings and model comparisons, and presented outcomes to mentors and peers — turning technical exploration into understandable insights for team-wide learning."
+        ],
+        "role" : "Machine learning intern",
         "company" : "Verzeo",
-        "timeline" : "June 2020 - August 2020"
+        "timeline" : "June 2020 - August 2020",
+        "location": "Remote"
     }
 ]

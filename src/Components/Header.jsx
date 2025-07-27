@@ -3,52 +3,50 @@ import './header.css'
 import Resume from '../assets/Resume.pdf'
 import { Block } from '@mui/icons-material';
 import { duration } from '@mui/material';
-// import './responsive-updates.css'
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
-  function scrollToElement(ele){
-    ele[0].scrollIntoView({
-      behavior : 'smooth',
-      block : 'start',
+  function scrollToElement(ele, offset = 0) {
+    if (!ele || !ele[0]) return;
+    const element = ele[0];
+    const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth',
     });
-  }
+  }  
   
   function scrollToExperience(){
     const ele = document.getElementsByClassName('workexp-tl-cls');
-    if( ele ){
-      scrollToElement(ele);
+    if (ele) {
+      scrollToElement(ele, 50);
     }
     closeMobileMenu();
-    return;
   }
 
   function scrollToSkills(){
     const ele = document.getElementsByClassName('skills-mn-cls');
-    if( ele ){
-      scrollToElement(ele);
+    if (ele) {
+      scrollToElement(ele, 50);
     }
     closeMobileMenu();
-    return;
   }
 
   function scrollToProjects(){
     const ele = document.getElementsByClassName('projectCard-mn-cls');
-    if( ele ){
+    if (ele) {
       scrollToElement(ele);
     }
     closeMobileMenu();
-    return;
   }
 
   function scrollToRecognition(){
     const ele = document.getElementsByClassName('recognition-mn-cls');
-    if( ele ){
-      scrollToElement(ele);
+    if (ele) {
+      scrollToElement(ele, 60);
     }
     closeMobileMenu();
-    return;
   }
 
   function toggleMobileMenu() {
@@ -63,12 +61,13 @@ function Header() {
     closeMobileMenu();
   }
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     function handleOutsideClick(event) {
-      if (isMobileMenuOpen && 
-          !event.target.closest('.mobile-menu') && 
-          !event.target.closest('.hamburger-menu')) {
+      if (
+        isMobileMenuOpen && 
+        !event.target.closest('.mobile-menu') && 
+        !event.target.closest('.hamburger-menu')
+      ) {
         closeMobileMenu();
       }
     }
@@ -77,14 +76,12 @@ function Header() {
     return () => document.removeEventListener('click', handleOutsideClick);
   }, [isMobileMenuOpen]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
-    
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -94,12 +91,10 @@ function Header() {
     <>
       <div className='header-mn-cls'>
         <div className='pacifico-regular'>
-          <a href='https://www.google.com'>
+          <a href='https://www.linkedin.com/in/saivarshinithupakula/'>
             Sai Varshini Thupakula
           </a>
         </div>
-        
-        {/* Desktop Navigation */}
         <div className='header-rt-cls'>
           <div className='header-rt-ele'>
             <a href={Resume} download='Varshini-Resume.pdf' className='header-rt-ele-lnk'>
@@ -119,8 +114,6 @@ function Header() {
             Recognition
           </div>
         </div>
-
-        {/* Hamburger Menu Button */}
         <div 
           className={`hamburger-menu ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
@@ -130,14 +123,10 @@ function Header() {
           <div className="hamburger-line"></div>
         </div>
       </div>
-
-      {/* Mobile Menu Overlay */}
       <div 
         className={`mobile-menu-overlay ${isMobileMenuOpen ? 'active' : ''}`}
         onClick={closeMobileMenu}
       ></div>
-
-      {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
         <div className="mobile-menu-items">
           <div className="mobile-menu-item">

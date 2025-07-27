@@ -27,7 +27,7 @@ import { useEffect, useState } from 'react';
 
 
 function Skills() {
-  const [activeTooltip, setActiveTooltip] = useState(null); // State to manage which tooltip is active
+  const [activeTooltip, setActiveTooltip] = useState(null);
 
   const skillsArray = [
     { src: cpp, alt: "C++" },
@@ -80,7 +80,8 @@ useEffect(() => {
 
 
   return (
-    <div className='Skills-mn-cls'>
+    <div className='skills-mn-cls'>
+      <div className='skills-title-cls'>
         Skills
       </div>
       <div className='skills-icon-cls'>
@@ -90,11 +91,11 @@ useEffect(() => {
               <div 
                 key={index} 
                 className='skills-icon-ele'
-                onMouseEnter={() => setActiveTooltip(skill.alt)} // Set active tooltip on mouse enter
-                onMouseLeave={() => setActiveTooltip(null)} // Clear active tooltip on mouse leave
+                onMouseEnter={() => setActiveTooltip(skill.alt)} 
+                onMouseLeave={() => setActiveTooltip(null)} 
               >
                 <img src={skill.src} alt={skill.alt} />
-                {activeTooltip === skill.alt && ( // Conditionally render tooltip
+                {activeTooltip === skill.alt && ( 
                   <span className="skill-tooltip">{skill.alt}</span>
                 )}
               </div>
@@ -107,11 +108,11 @@ useEffect(() => {
               <div 
                 key={index} 
                 className='skills-icon-ele'
-                onMouseEnter={() => setActiveTooltip(skill.alt)} // Set active tooltip on mouse enter
-                onMouseLeave={() => setActiveTooltip(null)} // Clear active tooltip on mouse leave
+                onMouseEnter={() => setActiveTooltip(skill.alt)} 
+                onMouseLeave={() => setActiveTooltip(null)} 
               >
                 <img src={skill.src} alt={skill.alt}/>
-                {activeTooltip === skill.alt && ( // Conditionally render tooltip
+                {activeTooltip === skill.alt && ( 
                   <span className="skill-tooltip">{skill.alt}</span>
                 )}
               </div>
@@ -120,7 +121,7 @@ useEffect(() => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

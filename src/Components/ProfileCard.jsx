@@ -1,7 +1,6 @@
 import React from 'react'
 import ProfileCardImg from '../assets/profileCard.png'
 import './profileCard.css'
-// import './responsive-updates.css'
 
 
 function ProfileCard() {

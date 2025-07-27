@@ -1,4 +1,3 @@
-/* About Me Section - Full viewport height */
 .about-me-section {
     min-height: 100vh;
     display: flex;
@@ -6,48 +5,77 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.card-mn-cls{
+    position: relative;
+    overflow: hidden;
+    margin-top: -100px;
+  }
+  
+  .card-mn-cls {
     height: auto;
-    min-height: 300px;
+    min-height: 400px;
     width: 90%;
     max-width: 1200px;
     color: white;
-    background-color: black;
+    background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(30, 30, 30, 0.98) 50%,
+      rgba(0, 0, 0, 0.95) 100%);
     margin: auto;
-    border-radius: 20px;
-    box-shadow:
-        inset 0 -1em 3em rgba(255, 255, 255, 0.2),
-        0.3em 0.3em 1em rgba(255, 255, 255, 0.2);
-}
-
-.aboutMeCard-mn-cls{
-    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .aboutMeCard-mn-cls {
+    padding: 50px;
     font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.3rem;
+    line-height: 2;
     text-align: center;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .card-mn-cls {
-        width: 95%;
-        margin: 20px auto;
-    }
-    
-    .aboutMeCard-mn-cls {
-        padding: 30px;
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-}
-
-@media (max-width: 480px) {
-    .aboutMeCard-mn-cls {
-        padding: 20px;
-        font-size: 0.9rem;
-    }
-}
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 25px;
+  }
+  
+  .aboutMeCard-mn-cls::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      #ff6b6b 25%,
+      #4ecdc4 50%,
+      #45b7d1 75%,
+      transparent 100%);
+    border-radius: 1px;
+    animation: shimmerLine 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmerLine {
+    0%, 100% { opacity: 0.3; transform: scaleX(0.8); }
+    50% { opacity: 1; transform: scaleX(1.2); }
+  }
+  
+  .highlight-word {
+    font-weight: 600;
+    color: #ff6b6b;
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 1ch;
+    color: #ffffff;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+  

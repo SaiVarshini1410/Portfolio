@@ -1,38 +1,52 @@
 // Recognition.jsx
 import React from 'react';
 import './recognition.css';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 function Recognition() {
-  // Sample recognition data - replace with your actual achievements
   const recognitionData = [
     {
-      title: "Best Developer Award",
-      organization: "IBM - World largest tech hub.",
-      date: "2024",
-      description: "Recognized for outstanding contribution to software development and team leadership.",
-      type: "award",
+        title: "International Math Olympiad",
+        organization: "IMO - Official",
+        date: "2016",
+        description: "Scored 90%+, showcasing early aptitude in problem-solving and logical reasoning..",
+        type: "award",
     },
     {
-      title: "Full Stack Development Certificate",
-      organization: "Vasavi Tech Institute",
-      date: "2023",
-      description: "Completed full-stack development program with distinction.",
-      type: "certificate",
+        title: "TechGig Geek Goddess",
+        organization: "GeekforGeeks",
+        date: "2023",
+        description: "Scored a perfect 200/200, showcasing strength in problem-solving under pressure.",
+        type: "award",
     },
     {
-      title: "Innovation Excellence",
-      organization: "NEU Innovation Hub",
-      date: "2023",
-      description: "Awarded for developing innovative solutions that improved system efficiency by 40%.",
-      type: "award",
+        title: "CodeKaze",
+        organization: "Coding Ninjas",
+        date: "2022",
+        description: "Ranked 12th at college level, proving coding proficiency in a competitive space.",
+        type: "award",
     },
     {
-      title: "Cloud Computing Certification",
-      organization: "Cloud Platform",
-      date: "2022",
-      description: "Achieved professional level certification in cloud architecture and deployment.",
-      type: "certificate",
-    }
+        title: "IBM Digital Credentials",
+        organization: "IBM - ISDL",
+        date: "2024",
+        description: "Earned WatsonX Essentials and AIX Systems Administrator badges.",
+        type: "award",
+    },
+    {
+        title: "Star of the month(x7)",
+        organization: "IBM - ISDL",
+        date: "2023-2024",
+        description: "Recognized repeatedly at IBM for delivering impact and going beyond the call of duty",
+        type: "award",
+    },
+    {
+        title: "Athlete of the quarter",
+        organization: "High school",
+        date: "2015",
+        description: "Recognized across all school branches for athletic excellence and leadership in competitions.",
+        type: "award",
+    },
   ];
 
   return (
@@ -44,7 +58,9 @@ function Recognition() {
         {recognitionData.map((item, index) => (
           <div key={index} className='recognition-card-cls'>
             <div className='recognition-icon-cls'>
-              <img src={item.icon} alt={item.type} />
+            <div className='recognition-icon-cls'>
+                <EmojiEventsIcon style={{ fontSize: '40px', color: '#f4c10f' }} /> 
+            </div>
             </div>
             <div className='recognition-content-cls'>
               <div className='recognition-card-title-cls'>
