@@ -28,7 +28,7 @@ function Header() {
   function scrollToSkills(){
     const ele = document.getElementsByClassName('skills-mn-cls');
     if (ele) {
-      scrollToElement(ele, 50);
+      scrollToElement(ele, 100);
     }
     closeMobileMenu();
   }
@@ -36,13 +36,21 @@ function Header() {
   function scrollToProjects(){
     const ele = document.getElementsByClassName('projectCard-mn-cls');
     if (ele) {
-      scrollToElement(ele);
+      scrollToElement(ele,50);
     }
     closeMobileMenu();
   }
 
   function scrollToRecognition(){
     const ele = document.getElementsByClassName('recognition-mn-cls');
+    if (ele) {
+      scrollToElement(ele, 60);
+    }
+    closeMobileMenu();
+  }
+
+  function scrollToEducation(){
+    const ele = document.getElementsByClassName('education-mn-cls');
     if (ele) {
       scrollToElement(ele, 60);
     }
@@ -107,6 +115,9 @@ function Header() {
           <div className='header-rt-ele' onClick={scrollToSkills}>
             Skills
           </div>
+          <div className='header-rt-ele' onClick={scrollToEducation}>
+            Education
+          </div>
           <div className='header-rt-ele' onClick={scrollToProjects}>
             Projects
           </div>
@@ -144,6 +155,9 @@ function Header() {
           </div>
           <div className="mobile-menu-item" onClick={scrollToSkills}>
             Skills
+          </div>
+          <div className='mobile-menu-item' onClick={scrollToEducation}>
+            Education
           </div>
           <div className="mobile-menu-item" onClick={scrollToProjects}>
             Projects
