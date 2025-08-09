@@ -1,0 +1,189 @@
+body {
+    cursor: none !important; 
+    background: #000; /* Dark background works better with glow effects */
+}
+
+/* Enhanced glow cursor effect with multiple layers */
+.glow-cursor {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Multi-layered glow effect */
+    background: 
+        radial-gradient(circle, rgba(138, 43, 226, 0.8) 0%, rgba(138, 43, 226, 0.3) 20%, transparent 40%),
+        radial-gradient(circle, rgba(75, 0, 130, 0.6) 10%, rgba(75, 0, 130, 0.2) 30%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.1) 35%, transparent 60%);
+    
+    /* Add subtle animation */
+    animation: pulse 3s ease-in-out infinite;
+    
+    /* Add blur for softer glow */
+    filter: blur(1px);
+    
+    /* Add box shadow for extra glow */
+    box-shadow: 
+        0 0 50px rgba(138, 43, 226, 0.4),
+        0 0 100px rgba(138, 43, 226, 0.2),
+        0 0 150px rgba(75, 0, 130, 0.1);
+}
+
+/* Pulsing animation */
+@keyframes pulse {
+    0%, 100% { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% { 
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* Enhanced hover effect with stronger glow */
+.glow-cursor.hover {
+    width: 280px;
+    height: 280px;
+    
+    background: 
+        radial-gradient(circle, rgba(255, 20, 147, 0.9) 0%, rgba(255, 20, 147, 0.4) 20%, transparent 40%),
+        radial-gradient(circle, rgba(138, 43, 226, 0.7) 10%, rgba(138, 43, 226, 0.3) 30%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, rgba(255, 255, 255, 0.15) 35%, transparent 60%);
+    
+    box-shadow: 
+        0 0 80px rgba(255, 20, 147, 0.6),
+        0 0 120px rgba(255, 20, 147, 0.4),
+        0 0 200px rgba(138, 43, 226, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.1);
+    
+    filter: blur(1.5px);
+    animation: hoverPulse 1.5s ease-in-out infinite;
+}
+
+/* Special hover animation */
+@keyframes hoverPulse {
+    0%, 100% { 
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    50% { 
+        transform: translate(-50%, -50%) scale(1.05) rotate(180deg);
+    }
+}
+
+/* Add trail effect */
+.glow-cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    animation: trailEffect 2s ease-in-out infinite reverse;
+}
+
+@keyframes trailEffect {
+    0% { 
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.3;
+    }
+    100% { 
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Add particle effect */
+.glow-cursor::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(235, 30, 30, 0.8) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { 
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Ensure all interactive elements hide cursor */
+* {
+    cursor: none !important;
+}
+
+/* Special effects for different interactive elements */
+a:hover ~ .glow-cursor,
+button:hover ~ .glow-cursor {
+    background: 
+        radial-gradient(circle, rgba(0, 255, 127, 0.8) 0%, rgba(0, 255, 127, 0.3) 20%, transparent 40%),
+        radial-gradient(circle, rgba(34, 139, 34, 0.6) 10%, rgba(34, 139, 34, 0.2) 30%, transparent 50%);
+    
+    box-shadow: 
+        0 0 60px rgba(0, 255, 127, 0.5),
+        0 0 120px rgba(0, 255, 127, 0.3);
+}
+
+/* Click effect */
+.glow-cursor.clicked {
+    animation: clickEffect 0.3s ease-out;
+}
+
+@keyframes clickEffect {
+    0% { 
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% { 
+        transform: translate(-50%, -50%) scale(0.8);
+        background: 
+            radial-gradient(circle, rgba(255, 255, 0, 0.9) 0%, rgba(255, 255, 0, 0.4) 20%, transparent 40%);
+        box-shadow: 
+            0 0 100px rgba(255, 255, 0, 0.7),
+            0 0 200px rgba(255, 255, 0, 0.4);
+    }
+    100% { 
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* For mobile devices - show normal cursor */
+@media (hover: none) and (pointer: coarse) {
+    body, * {
+        cursor: auto !important;
+    }
+    
+    .glow-cursor {
+        display: none !important;
+    }
+}
+
+/* Performance optimization for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .glow-cursor {
+        animation: none;
+        transition: none;
+    }
+    
+    .glow-cursor::before,
+    .glow-cursor::after {
+        animation: none;
+    }
+}

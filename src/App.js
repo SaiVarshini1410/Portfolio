@@ -10,9 +10,12 @@ import Loading from './Components/Loading';
 import { useState,useEffect } from 'react';
 import Recognition from './Components/Recognition';
 import './Components/responsive-updates.css'
+import { useMediaQuery } from '@mui/material';
+import Education from './Components/Education';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 4000);
@@ -27,13 +30,16 @@ function App() {
     <div className="App">
       <Header/>
       <div  className='section-mn-cls'>
+      {!isMobile &&
         <ProfileCard/>
+      }
         <Card/>
       </div>
       <div className='section-wrkexp-cls'>
         <WorkExpCard/>
       </div>
       <Skills/>
+      <Education/>
       <Projects/>
       <Recognition/>
       <Footer/>

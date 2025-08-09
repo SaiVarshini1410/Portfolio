@@ -334,3 +334,20 @@ button:hover {
     height: 25px;
   }
 }
+@media (max-width: 480px) {
+  .carousel-inner {
+    padding: 10px;
+  }
+  
+  .carasoul-project-title-cls {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .project-github-img,
+  .project-hosted-img {
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
