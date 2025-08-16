@@ -71,5 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Production URL 
 
-https://bucolic-swan-d60352.netlify.app/
+https://varshini-thupakula.netlify.app/
 
