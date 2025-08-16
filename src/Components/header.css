@@ -1,8 +1,8 @@
 .header-mn-cls {
     position: sticky;
     top: 0;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: left;
     margin: 0px 10px 10px 10px;
     border-radius: 20px;
@@ -23,12 +23,13 @@
   }
   
   .pacifico-regular:hover {
-    font-weight: 600;
+    text-decoration: none;
+    color: #ff6b6b !important;
   }
   
   a, a:hover {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   
   .header-rt-cls {
@@ -53,11 +54,11 @@
   }
   
   .header-rt-ele:hover {
-    color: red;
+    color: #ff6b6b;
   }
   
   .header-rt-ele-lnk:hover {
-    color: red;
+    color: #ff6b6b;
   }
   
   .hamburger-menu {
@@ -71,7 +72,7 @@
   .hamburger-line {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 3px 0;
     transition: 0.3s;
     transform-origin: center;
@@ -114,12 +115,12 @@
     width: 70%;
     max-width: 300px;
     height: 100%;
-    background-color: white;
+    background-color: black;
     z-index: 1000;
     padding: 80px 20px 20px 20px;
     transition: right 0.3s ease;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: white;
   }
   
   .mobile-menu.active {

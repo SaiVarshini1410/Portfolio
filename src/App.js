@@ -1,48 +1,43 @@
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import ProfileCard from './Components/ProfileCard';
-import Card from './Components/AboutMeCard';
+import AboutMeCard from './Components/AboutMeCard'
 import WorkExpCard from './Components/WorkExpCard';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Loading from './Components/Loading';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Recognition from './Components/Recognition';
-import './Components/responsive-updates.css'
-import { useMediaQuery } from '@mui/material';
+import './Components/responsive-updates.css';
 import Education from './Components/Education';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 4000);
-
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
     return <Loading />;
   }
+
   return (
     <div className="App">
-      <Header/>
-      <div  className='section-mn-cls'>
-      {!isMobile &&
-        <ProfileCard/>
-      }
-        <Card/>
-      </div>
+      <Header />
+      <AboutMeCard />      
       <div className='section-wrkexp-cls'>
-        <WorkExpCard/>
+        <WorkExpCard />
       </div>
-      <Skills/>
-      <Education/>
-      <Projects/>
-      <Recognition/>
-      <Footer/>
+      
+      <Skills />
+      <Education />
+      <Projects />
+      <Recognition />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

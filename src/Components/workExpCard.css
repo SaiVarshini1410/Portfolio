@@ -8,6 +8,7 @@
     scroll-margin-top: 120px;
     position: relative;
     overflow: hidden;
+    background-color: black;
 }
 
 .workexp-tl-cls::before {
@@ -91,7 +92,20 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     text-align: left !important;
+    height: 700px;
+    overflow-y : scroll;
+    scrollbar-width: 0px;
+    scroll-behavior: smooth;
 }
+
+.MuiTimelineContent-root::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+.MuiTimelineContent-root::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
 
 .MuiTimelineContent-root::before {
     content: '';
@@ -166,11 +180,11 @@
 }
 
 .MuiTimelineDot-root {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #ea6666 0%, #a24b4b 100%) !important;
     border: 4px solid rgba(255, 255, 255, 0.3) !important;
     box-shadow: 
-        0 0 25px rgba(102, 126, 234, 0.6),
-        inset 0 2px 0 rgba(255, 255, 255, 0.3) !important;
+        0 0 25px rgba(234, 102, 102, 0.6),
+        inset 0 2px 0 rgba(255, 255, 255, 0.013) !important;
     width: 60px !important;
     height: 60px !important;
     display: flex !important;
@@ -185,17 +199,17 @@
 @keyframes pulse {
     0%, 100% { 
         transform: scale(1);
-        box-shadow: 0 0 25px rgba(102, 126, 234, 0.6);
+        box-shadow: 0 0 25px rgba(234, 102, 102, 0.6);
     }
     50% { 
         transform: scale(1.1);
-        box-shadow: 0 0 35px rgba(102, 126, 234, 0.8);
+        box-shadow: 0 0 35px rgba(234, 102, 102, 0.8);
     }
 }
 
 .MuiTimelineDot-root:hover {
     transform: scale(1.2) !important;
-    box-shadow: 0 0 40px rgba(102, 126, 234, 0.9) !important;
+    box-shadow: 0 0 40px rgba(234, 102, 102, 0.9) !important;
     animation-play-state: paused;
 }
 
@@ -219,7 +233,7 @@
 .MuiTimelineConnector-root {
     background: linear-gradient(to bottom, 
         rgba(255, 255, 255, 0.6) 0%, 
-        rgba(102, 126, 234, 0.8) 50%, 
+        rgba(234, 102, 102, 0.8) 50%, 
         rgba(255, 255, 255, 0.6) 100%) !important;
     width: 4px !important;
     border-radius: 2px;
@@ -297,13 +311,13 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #4ecdc4;
+    color: #cd4e4e;
     font-size: 0.8rem;
     transition: all 0.3s ease;
 }
 
 .MuiTimelineContent-root li:hover {
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
     transform: translateX(5px);
 }
 

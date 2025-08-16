@@ -20,7 +20,7 @@ function Header() {
   function scrollToExperience(){
     const ele = document.getElementsByClassName('workexp-tl-cls');
     if (ele) {
-      scrollToElement(ele, 50);
+      scrollToElement(ele);
     }
     closeMobileMenu();
   }
@@ -28,7 +28,7 @@ function Header() {
   function scrollToSkills(){
     const ele = document.getElementsByClassName('skills-mn-cls');
     if (ele) {
-      scrollToElement(ele, 100);
+      scrollToElement(ele,10);
     }
     closeMobileMenu();
   }
@@ -36,7 +36,7 @@ function Header() {
   function scrollToProjects(){
     const ele = document.getElementsByClassName('projectCard-mn-cls');
     if (ele) {
-      scrollToElement(ele,50);
+      scrollToElement(ele,-50);
     }
     closeMobileMenu();
   }
@@ -44,7 +44,7 @@ function Header() {
   function scrollToRecognition(){
     const ele = document.getElementsByClassName('recognition-mn-cls');
     if (ele) {
-      scrollToElement(ele, 60);
+      scrollToElement(ele, -20);
     }
     closeMobileMenu();
   }
@@ -52,7 +52,7 @@ function Header() {
   function scrollToEducation(){
     const ele = document.getElementsByClassName('education-mn-cls');
     if (ele) {
-      scrollToElement(ele, 60);
+      scrollToElement(ele,-40);
     }
     closeMobileMenu();
   }

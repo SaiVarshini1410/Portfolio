@@ -1,10 +1,15 @@
 import github from '../assets/github.png'
 import springboot from '../assets/springBoot.png'
 import eclipse from '../assets/eclipse.png'
+import trackIt from '../assets/track-it.png'
+import palette from '../assets/palette.png'
+import glaucoma from '../assets/glaucoma.png'
+import covidImage from '../assets/covid-safe-room.png'
+import foodOrder from '../assets/foodOrder.jpg'
 
 export const projectsJson = [
     {
-        "src": github, 
+        "src": trackIt, 
         "alt": "Track-It",
         "title":"Track-It", 
         "desc": [
@@ -27,7 +32,7 @@ export const projectsJson = [
         "hostedLink" : "https://github.com/SaiVarshini1410/TrackIt"
     },
     { 
-        "src": springboot, 
+        "src": glaucoma, 
         "alt": "Automated Glaucoma Detection",
         "title":"Automated Glaucoma Detection",
         "desc": [
@@ -45,7 +50,7 @@ export const projectsJson = [
         "hostedLink" : "https://journal.esrgroups.org/jes/article/view/640"
     },
     { 
-        "src": eclipse,
+        "src": palette,
         "alt": "Spectrum", 
         "title":"Spectrum", 
         "desc": [
@@ -63,7 +68,7 @@ export const projectsJson = [
         "hostedLink" : "https://github.com/SaiVarshini1410/Spectrum"
     },
     { 
-        "src": eclipse,
+        "src": covidImage,
         "alt": "Covid Safe Room", 
         "title":"Covid Safe Room", 
         "desc": [
@@ -82,7 +87,7 @@ export const projectsJson = [
         "hostedLink" : "https://github.com/SaiVarshini1410/Covid-Safe-Room"
     },
     { 
-        "src": eclipse,
+        "src": foodOrder,
         "alt": "Online Food Ordering System", 
         "title":"Online Food Ordering System", 
         "desc": [

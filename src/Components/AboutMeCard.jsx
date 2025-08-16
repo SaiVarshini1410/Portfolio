@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ProfileCardImg from '../assets/profileCard.png';
 import aboutMe from '../Utils/aboutMe.json';
 import './aboutMeCard.css';
 
@@ -50,38 +51,26 @@ function AboutMeCard() {
   };
 
   return (
-    <div className="about-me-section">
-      <div className="card-mn-cls">
-        <div className="aboutMeCard-mn-cls">
-          <div
-            className="about-text"
-            dangerouslySetInnerHTML={{
-              __html: enhanceText(typedText) + (showCursor ? '<span class="blinking-cursor">|</span>' : '')
-            }}
-          ></div>
+    <div className="profile-about-section">
+      <div className="profile-card-container">
+        <div className="profileCard-mn-cls">
+          <img src={ProfileCardImg} alt="profileCard-img" className="profileCard-img-cls" />
+        </div>
+      </div>
+      
+      <div className="about-card-container">
+        <div className="card-mn-cls">
+          <div className="aboutMeCard-mn-cls">
+            <div
+              className="about-text"
+              dangerouslySetInnerHTML={{
+                __html: enhanceText(typedText) + (showCursor ? '<span class="blinking-cursor">|</span>' : '')
+              }}
+            ></div>
 
-          <div style={{
-            position: 'absolute',
-            top: '15px',
-            left: '15px',
-            fontSize: '3rem',
-            color: 'rgba(255, 107, 107, 0.2)',
-            fontFamily: 'serif',
-            lineHeight: 1,
-            zIndex: -1
-          }}>"</div>
-
-          <div style={{
-            position: 'absolute',
-            bottom: '15px',
-            right: '15px',
-            fontSize: '3rem',
-            color: 'rgba(78, 205, 196, 0.2)',
-            fontFamily: 'serif',
-            lineHeight: 1,
-            zIndex: -1,
-            transform: 'rotate(180deg)'
-          }}>"</div>
+            <div className="quote-mark quote-mark-start">"</div>
+            <div className="quote-mark quote-mark-end">"</div>
+          </div>
         </div>
       </div>
     </div>
