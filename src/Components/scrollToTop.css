@@ -1,0 +1,171 @@
+/* scrollToTop.css */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+  
+  .scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 
+      0 8px 25px rgba(255, 107, 107, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  .scroll-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.2) 0%, 
+      rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .scroll-button:hover::before {
+    opacity: 1;
+  }
+  
+  .scroll-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 
+      0 12px 35px rgba(255, 107, 107, 0.4),
+      0 0 0 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  .scroll-button:active {
+    transform: translateY(-1px) scale(1.02);
+    transition: all 0.1s ease;
+  }
+  
+  .scroll-button svg {
+    animation: bounce 2s infinite;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-3px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .scroll-to-top {
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .scroll-button {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .scroll-button svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scroll-to-top {
+      bottom: 15px;
+      right: 15px;
+    }
+  
+    .scroll-button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .scroll-button svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  /* Dark theme compatibility */
+  @media (prefers-color-scheme: dark) {
+    .scroll-button {
+      background: linear-gradient(135deg, #ea6666 0%, #a24b4b 100%);
+      box-shadow: 
+        0 8px 25px rgba(102, 126, 234, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+  
+    .scroll-button:hover {
+      box-shadow: 
+        0 12px 35px rgba(102, 126, 234, 0.4),
+        0 0 0 2px rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-button {
+      animation: none;
+      transition: none;
+    }
+  
+    .scroll-button svg {
+      animation: none;
+    }
+  
+    @keyframes fadeInUp {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  }
+  
+  /* Focus styles for keyboard navigation */
+  .scroll-button:focus {
+    outline: none;
+    box-shadow: 
+      0 8px 25px rgba(255, 107, 107, 0.3),
+      0 0 0 3px rgba(255, 107, 107, 0.5);
+  }
+  
+  .scroll-button:focus:not(:focus-visible) {
+    box-shadow: 
+      0 8px 25px rgba(255, 107, 107, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+  }

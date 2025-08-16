@@ -75,6 +75,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  justify-content: center;
 }
 
 .carasoul-img-cls img {
@@ -98,7 +99,7 @@
 }
 
 .carasoul-project-title-cls {
-  color: red;
+  color: rgb(155,71,71);
   font-weight: bold;
   font-size: 1.5rem;
   display: flex;
@@ -111,12 +112,12 @@
 .carasoul-project-title-cls > div:first-child {
   font-size: 1.5rem;
   font-weight: bold;
-  color: red;
+  color: rgb(236, 93, 93);
   white-space: nowrap;
 }
 
 .carasoul-project-desc-cls {
-  color: violet;
+  color: white;
   margin-top: 0.5rem;
   flex-grow: 1;
   text-align: left;
@@ -137,12 +138,12 @@
 }
 
 .carasoul-project-desc-cls::-webkit-scrollbar-thumb {
-  background: red;
+  background: rgb(155,71,71);
   border-radius: 8px;
 }
 
 .carasoul-project-desc-cls::-webkit-scrollbar-thumb:hover {
-  background: darkred;
+  background: rgb(236, 55, 55);
 }
 
 .project-github-img,
@@ -186,7 +187,7 @@ button {
 }
 
 button:hover {
-  color: red;
+  color: white;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -201,7 +202,7 @@ button:hover {
 }
 
 .carousel-indicators li.active {
-  background-color: red;
+  background-color: white;
 }
 
 .carousel-control-prev,

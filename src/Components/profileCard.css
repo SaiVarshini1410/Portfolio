@@ -1,4 +1,15 @@
-.profileCard-mn-cls {
+/* profileCard.css - Fix positioning and sizing */
+.profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+  
+  .profileCard-mn-cls {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -11,6 +22,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
+    flex-shrink: 0; /* Prevent shrinking */
   }
   
   .profileCard-mn-cls:hover {
@@ -24,15 +36,7 @@
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, 0.3);
     transition: border 0.3s ease;
-  }
-  
-  .profile-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-top: 200px;
   }
   
   /* Responsive adjustments */
@@ -44,9 +48,22 @@
     }
     
     .profileCard-img-cls {
-      width: 450px;
-      height: 450px;
-      margin-top: 300px;
+      width: 350px;
+      height: 350px;
+      /* Remove problematic margin-top */
+    }
+  }
+  
+  @media (max-width: 1023px) and (min-width: 769px) {
+    .profileCard-mn-cls {
+      width: 220px;
+      height: 220px;
+      margin: 40px auto 50px auto;
+    }
+    
+    .profileCard-img-cls {
+      width: 220px;
+      height: 220px;
     }
   }
   
@@ -54,7 +71,7 @@
     .profileCard-mn-cls {
       width: 200px;
       height: 200px;
-      margin: 30px auto 40px auto;
+      margin: 30px auto 20px auto;
     }
     
     .profileCard-img-cls {
@@ -67,7 +84,7 @@
     .profileCard-mn-cls {
       width: 180px;
       height: 180px;
-      margin: 20px auto 30px auto;
+      margin: 20px auto 15px auto;
     }
     
     .profileCard-img-cls {
@@ -75,4 +92,3 @@
       height: 140px;
     }
   }
-  
