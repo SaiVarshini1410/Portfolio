@@ -6,10 +6,17 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 function Recognition() {
   const recognitionData = [
     {
-        title: "International Math Olympiad",
-        organization: "IMO - Official",
-        date: "2016",
-        description: "Scored 90%+, showcasing early aptitude in problem-solving and logical reasoning..",
+        title: "Star of the month(x4)",
+        organization: "IBM",
+        date: "2023-2025",
+        description: "Recognized repeatedly at IBM for delivering impact and going beyond the call of duty",
+        type: "award",
+    },
+    {
+        title: "IBM Digital Credentials",
+        organization: "IBM",
+        date: "2024-2025",
+        description: "Earned WatsonX Essentials and AIX Systems Administrator badges.",
         type: "award",
     },
     {
@@ -27,17 +34,10 @@ function Recognition() {
         type: "award",
     },
     {
-        title: "IBM Digital Credentials",
-        organization: "IBM - ISDL",
-        date: "2024",
-        description: "Earned WatsonX Essentials and AIX Systems Administrator badges.",
-        type: "award",
-    },
-    {
-        title: "Star of the month(x7)",
-        organization: "IBM - ISDL",
-        date: "2023-2024",
-        description: "Recognized repeatedly at IBM for delivering impact and going beyond the call of duty",
+        title: "International Math Olympiad",
+        organization: "IMO - Official",
+        date: "2016",
+        description: "Scored 90%+, showcasing early aptitude in problem-solving and logical reasoning..",
         type: "award",
     },
     {

@@ -1,40 +1,41 @@
 [
     {
         "experience" : [
-            "Contributed to one of IBM’s highest revenue-generating products, built using Java and Spring, and became deeply involved in core engineering and architecture overhauls.",
-            "Refactored the application from an OSGi Virgo-based Spring app to a monolith Spring Boot application — a massive shift that simplified complexity, improved stability, and marked the beginning of new system-level learning.",
-            "Played a key role in upgrading the OS to RHEL 9.5 by making the codebase fully compatible and rebuilding the environment from scratch; created a custom ISO, reducing its size from 11 GB to 2 GB (~82%).",
-            "Upgraded WinRM integration for improved remote management, addressing legacy incompatibilities and enhancing automation workflows.",
-            "Migrated all Python scripts from 2.7 and 3.6 to 3.9 — modernizing backup, restore, and diagnostics flows across the product.",
-            "Stepped into critical deployment responsibilities: configured new build servers on RHEL 9.5, set up the entire staging infrastructure, and managed publishing to public repositories — ensuring seamless delivery during a pivotal release.",
-            "Consolidated PostgreSQL data into MongoDB by designing optimized collections, resulting in performance improvements and simplified data handling.",
-            "Improved backend logging with log rotation, increasing efficiency by 7% and making system monitoring more effective.",
-            "Built 3 complete BIRT reports for deep product usage insights and redesigned several legacy reports to be cleaner, more purposeful, and user-friendly.",
-            "Resolved critical product vulnerabilities, resulting in an 11% boost in security posture and a measurable reduction in CVEs.",
-            "Enhanced the Node.js middleware layer, enabling faster UI-backend communication and more responsive user experiences.",
-            "Regularly involved in high-pressure customer situations (critsits), resolving priority blockers within hours and directly contributing to customer retention.",
-            "Collaborated across multiple teams — from QA to packaging to UI — and picked up practices that helped shape my engineering discipline and broaden my system-level thinking.",
-            "Actively participated in WatsonX hackathons, IBM Sangam open-source events, and internal tech forums — learning from diverse teams across the globe and contributing to a vibrant engineering culture."
+            "Worked as a Software Engineer at IBM India Systems Development Labs (ISDL), the company's largest development hub, contributing to one of IBM's highest revenue-generating products built with Java and Spring, and playing a key role in core engineering and architecture overhauls.",
+            "Played a key role in migrating the product architecture from OSGi (Virgo)-based Spring to a monolithic Spring Boot application, simplifying modular complexity and improving system stability by 25% through resolved dependency injection and rewritten shared services.",
+            "Designed and executed a rolling upgrade and consolidation of PostgreSQL to a unified MongoDB collection (handling ~5M documents), merging instances for 20% faster queries and improved scalability, supporting production rolling upgrades.",
+            "Enhanced backend platform stability by mitigating memory leaks, optimizing session management logic, and resolving thread synchronization flaws, reducing memory usage by ~30% and improving runtime reliability by 15%.",
+            "Improved backend logging and observability by implementing log rotation, indexing, and standardized logs across modules, resulting in a 7% performance improvement and easier diagnostics.",
+            "Led the OS upgrade initiative from RHEL 8.7 to 9.5, adapting the entire backend codebase and system dependencies, and building a custom RHEL-based ISO, cutting upgrade downtime by 40% across 500+ servers and reducing image size by ~82% (11 GB to 2 GB).",
+            "Contributed to Node.js middleware optimization, refactoring backend code to enable faster UI-to-backend communication and reduce payload latency for end-users.",
+            "Strengthened product security posture by addressing high-impact vulnerabilities, patching CVEs, and enforcing updated encryption and validation mechanisms, leading to an 11% improvement in security compliance.",
+            "Handled critical backend-related system upgrades, including kernel patches, Python migration (2.7 & 3.6 to 3.9), and WinRM integration enhancements, resolving legacy compatibility blockers.",
+            "Migrated and optimized numerous shell/bash-based automation scripts across backend components, automating 40% of manual data processing tasks and improving environment setup times.",
+            "Implemented and redesigned BIRT reports from scratch to improve analytics and operational transparency; developed 3 detailed reports and improved multiple legacy ones with optimized queries for 20% improved customized analytics.",
+            "Owned end-to-end deployment flows, handling release builds, final packaging, and publishing—ensuring stable, repeatable backend delivery across internal and external environments.",
+            "Took complete ownership of staging and build environment setup on new OS (RHEL 9.5): configured fresh build servers, managed Maven dependencies, and deployed backend binaries to public repositories across release pipelines.",
+            "Regularly represented engineering in high-pressure customer escalations (critsits), directly resolving critical backend blockers within hours, restoring systems from crash to live operation within a day for 10+ high-priority clients",
+            "Participated in IBM WatsonX Hackathons, IBM Sangam Open Source events, and internal architecture forums — continuously contributing ideas and learning from cross-team collaboration."      
         ],
-        "role" : "Software developer",
-        "company" : "IBM-ISDL",
-        "timeline" : "August 2023 - Present",
+        "role" : "Software Engineer",
+        "company" : "IBM",
+        "timeline" : "August 2023 - June 2025",
         "location": "Pune, India"
     },
     {
         "experience" :[ 
-            "Built a complete machine management tool from scratch using React.js (frontend), Node.js + MySQL (backend), and Docker for containerization — deployed seamlessly on a virtual machine used by IBM teams for real-time monitoring and configuration of test infrastructure.",
-            "Integrated Python scripts to fetch deep system-level VM insights (CPU, memory, disk stats), improving overall tool capability and efficiency by over 30%, reducing manual lookup time drastically.",
+            "Built a full-stack machine management tool from scratch using React.js (frontend), Node.js + MySQL (backend), and Docker for containerization — deployed seamlessly on a virtual machine, reducing resource allocation time by 25% and used by IBM teams for real-time monitoring and test infrastructure configuration.",
+            "Integrated Python scripts to fetch deep system-level VM insights (CPU, memory, disk stats), enhancing resource visibility and improving overall tool capability and efficiency by over 30% through automated monitoring and reporting, reducing manual lookup time drastically.",
             "Designed the platform to be fully modular and configurable — incorporated team-specific customizations which made the tool adaptable across different IBM teams with varying needs.",
-            "Collaborated with multiple SMEs, STSMs, and senior architects to gather requirements and refine the UX — earned widespread recognition for the solution’s usability and practical relevance.",
+            "Collaborated with multiple SMEs, STSMs, and senior architects to gather requirements and refine the UX — earned widespread recognition for the solution's usability and practical relevance.",
             "The tool gained traction beyond the initial scope and was adopted by cross-functional teams, becoming part of their standard workflow for test environment management.",
-            "Automated critical test cases for teams working on IBM Storage Protect Plus (SPP) — accelerated their validation workflows, saving hours of manual effort per release cycle.",
-            "Contributed to the enhancement of IBM’s internal automation framework (CBA), optimizing repeated tasks and processes and helping scale automated testing for large-scale environments.",
+            "Automted critical test cases for teams working on IBM Storage Protect Plus (SPP) — reducing manual QA cycles by 40% through accelerated validation workflows, saving hours of manual effort per release cycle.",
+            "Contributed to the enhancement of IBM's internal automation framework (CBA), optimizing repeated tasks and processes and helping scale automated testing for large-scale environments.",
             "Gained hands-on experience in full-stack development, containerized deployments, backend API design, and system diagnostics — while closely working in an Agile setup with rapid feedback and iteration cycles.",
             "Shadowed senior engineers during design reviews and internal product discussions, which offered firsthand exposure to how scalable enterprise tools are conceptualized, pitched, and delivered."
         ],
-        "role" : "Software developer Intern",
-        "company" : "IBM-ISDL",
+        "role" : "Software Engineer Intern",
+        "company" : "IBM",
         "timeline" : "Jan 2023 - July 2023",
         "location": "Pune, India"
     },
@@ -48,9 +49,9 @@
             "Contributed to deployment planning discussions, ensuring the model was designed with scalability and real-world integration in mind, even if not productized during the internship.",
             "Documented findings and model comparisons, and presented outcomes to mentors and peers — turning technical exploration into understandable insights for team-wide learning."
         ],
-        "role" : "Machine learning intern",
+        "role" : "Machine Learning Intern",
         "company" : "Verzeo",
         "timeline" : "June 2020 - August 2020",
-        "location": "Remote"
+        "location": "Hyderabad, India"
     }
 ]

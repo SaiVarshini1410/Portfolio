@@ -30,28 +30,31 @@ function Skills() {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   const skillsArray = [
-    { src: cpp, alt: "C++" },
-    { src: css, alt: "CSS" },
-    { src: docker, alt: "Docker" },
-    { src: eclipse, alt: "Eclipse" },
-    { src: git, alt: "Git" },
-    { src: github, alt: "GitHub" },
-    { src: html, alt: "HTML" },
-    { src: react, alt: "React" },
-    { src: javascript, alt: "JavaScript" },
-  ];
-  const skillsArray2 = [
-    { src: linux, alt: "Linux" },
-    { src: mongo, alt: "MongoDB" },
-    { src: mysql, alt: "MySQL" },
-    { src: node, alt: "Node.js" },
-    { src: postgres, alt: "PostgreSQL" },
-    { src: python, alt: "Python" },
-    { src: redux, alt: "Redux" },
-    { src: shell, alt: "Shell" },
-    { src: springBoot, alt: "Spring Boot" },
-    { src: tableau, alt: "Tableau" }
-  ]
+  { src: cpp, alt: "C++" },
+  { src: css, alt: "CSS" },
+  { src: docker, alt: "Docker" },
+  { src: eclipse, alt: "Eclipse (BIRT)" },
+  { src: git, alt: "Git" },
+  { src: github, alt: "GitHub" },
+  { src: html, alt: "HTML" },
+  { src: java, alt: "Java" },
+  { src: javascript, alt: "JavaScript" },
+  { src: linux, alt: "Linux" },
+];
+
+const skillsArray2 = [
+  { src: mongo, alt: "MongoDB" },
+  { src: mysql, alt: "MySQL" },
+  { src: node, alt: "Node.js" },
+  { src: postgres, alt: "PostgreSQL" },
+  { src: python, alt: "Python" },
+  { src: react, alt: "React.js" },
+  { src: redux, alt: "Redux" },
+  { src: shell, alt: "Shell" },
+  { src: springBoot, alt: "Spring Boot" },
+  { src: tableau, alt: "Tableau" },
+];
+
 
 useEffect(() => {
   const generateRandomValue = (max) => Math.random() * max * 2 - max;

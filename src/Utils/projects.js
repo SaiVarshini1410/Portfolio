@@ -41,7 +41,7 @@ export const projectsJson = [
             "Conducted extensive data preprocessing to enhance model precision — including contrast normalization, ROI segmentation, and noise filtering, improving retinal feature clarity.",
             "Applied 5-fold cross-validation, confusion matrix evaluation, and performance metrics (accuracy, sensitivity, specificity) to validate model robustness and real-world reliability.",
             "Focused on optic disc and cup region analysis, a critical indicator for glaucoma progression — enhancing the model’s clinical relevance and diagnostic specificity.",
-            "Published in a peer-reviewed international journal, emphasizing the tool’s applicability for early screening in rural and under-resourced clinical setups, potentially reducing preventable vision loss.",
+            "Published in a peer-reviewed international journal, emphasizing the tool's applicability for early screening in rural and under-resourced clinical setups, potentially reducing preventable vision loss.",
             "Explored the ethical and social implications of deploying AI in healthcare diagnostics, advocating for explainability, accuracy, and safe adoption.",
             "This project strengthened my knowledge in computer vision, medical image processing, and AI for social good, and gave me experience in end-to-end research workflows — from ideation to publication.",
 
@@ -58,7 +58,7 @@ export const projectsJson = [
             "Developed a responsive web app using ReactJS, Bootstrap, and JavaScript, allowing users to create, delete, and manage custom color palettes.",
             "Users can copy any color shade in HEX, RGB, or RGBA format using the react-copy-to-clipboard package, streamlining design workflows.",
             "All palettes — default and custom — are stored in local storage, enabling persistent access without a backend.",
-            "Styled using both Bootstrap and MaterialUI’s withStyles to achieve clean, pixel-perfect palette card rendering.",
+            "Styled using both Bootstrap and MaterialUI's withStyles to achieve clean, pixel-perfect palette card rendering.",
             "Designed the app with full customization support, allowing users to start from scratch or modify built-in palettes.",
             "Learned and practiced key front-end concepts like state-driven UI, component reusability, and responsive layout structuring.",
             "This project was a blend of creativity and technical exploration — turning something simple into a hands-on playground for deeper learning.",

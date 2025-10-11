@@ -1,32 +1,31 @@
 [
     {
-        "instituion": "North Eastern University Khoury college of CS",
-        "degree": "Masters",
-        "field": "Computer Science and Engineering",
+        "instituion": "Northeastern University",
+        "degree": "Master of Science",
+        "field": "Computer Science",
         "duration": "2025-Present",
-        "location": "Boston, USA",
+        "location": "Boston, MA, USA",
         "grade": "CGPA: -",
         "coursework": [
-            "Data Structures & Algorithms",
-            "Database Management Systems",
-            "Software Engineering",
-            "Machine Learning",
-            "Web Development"
+            "Programming Design Paradigm",
+            "Database Management Systems"
         ]
     },
     {
         "instituion": "Vasavi College of Engineering",
-        "degree": "Bachelor of technology",
+        "degree": "Bachelor of Engineering",
         "field": "Computer Science and Engineering",
         "duration": "2019-2023",
-        "location": "Hyderabad, India",
-        "grade": "CGPA: 9.18/10",
+        "location": "India",
+        "grade": "CGPA: 3.7/4.0",
         "coursework": [
-            "Data Structures & Algorithms",
+            "Deisgn Analysis and Algorithms",
             "Database Management Systems",
             "Software Engineering",
             "Machine Learning",
-            "Web Development"
+            "Web Development",
+            "Operating Systems",
+            "Computer Networks"
         ]
     }
 ]
