@@ -1,3 +1,3 @@
 {
-    "aboutMe" : "I like code that argues back — so I profile it, refactor it, and make it sing. Software Engineer here: I stitch services cleanly, harden the edges, and teach products to learn from their own data."
+    "aboutMe" : "If you've ever rebuilt a working app just to make it great - we'll get along. I'm a Software Engineer who designs resilient services, clean schemas, and UIs that hold up under real traffic. I refactor architectures, shape APIs, and hunt latency with profiling, indexes, caches, and queues. I move data at scale - migrations, schema evolution, rolling upgrades - without waking the pager. I ship end-to-end features and wire in CI/observability so code tells on itself. When it helps, I teach products to learn - experiment, evaluate, deploy, iterate."
 }
