@@ -1,0 +1,51 @@
+.keyword-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.highlight-phrases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.phrase {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.phrase.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.software-engineer {
+  color: white; 
+  animation: pulse 2s infinite;
+  transition-delay: 0.5s;
+}
+
+.ai-ml-enthusiast {
+  color: white; 
+  animation: pulse 2s infinite;
+  transition-delay: 1s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: none !important; }
+  50% { transform: scale(1.05); box-shadow: none !important; }
+  100% { transform: scale(1); box-shadow: none !important; }
+}
+
+.phrase:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

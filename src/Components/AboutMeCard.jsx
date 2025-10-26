@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProfileCardImg from '../assets/profileCard.png';
 import aboutMe from '../Utils/aboutMe.json';
 import './aboutMeCard.css';
+import KeywordAnimation from './KeywordAnimation';
 
 function AboutMeCard() {
   const [typedText, setTypedText] = useState('');
@@ -10,20 +11,23 @@ function AboutMeCard() {
   useEffect(() => {
     let index = 0;
     const fullText = aboutMe.aboutMe;
-    const typingSpeed = 30;
     let isMounted = true;
 
     const type = () => {
       if (!isMounted) return;
       if (index < fullText.length) {
-        setTypedText((prev) => prev + fullText.charAt(index));
+        setTypedText(fullText.slice(0, index + 1));
         index++;
-        setTimeout(type, typingSpeed);
+        requestAnimationFrame(type);
+      } else {
+        console.log('Typing complete');
       }
     };
 
-    type();
-    return () => { isMounted = false; };
+    requestAnimationFrame(type);
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -60,9 +64,11 @@ function AboutMeCard() {
       
       <div className="about-card-container">
         <div className="card-mn-cls">
+          <KeywordAnimation />
           <div className="aboutMeCard-mn-cls">
             <div
               className="about-text"
+              style={{ whiteSpace: 'pre-wrap', overflow: 'visible', maxWidth: 'none' }}
               dangerouslySetInnerHTML={{
                 __html: enhanceText(typedText) + (showCursor ? '<span class="blinking-cursor">|</span>' : '')
               }}
