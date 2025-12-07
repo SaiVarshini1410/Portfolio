@@ -1,5 +1,31 @@
 [
     {
+        "experience": [
+            "Building the official SHEROS of Color club website from the ground up using React.js and Tailwind CSS, creating a modern, fully responsive web platform that serves as the central digital hub for the community.",
+            "Designed and implemented a comprehensive user interface showcasing upcoming events, past activities, leadership profiles, member resources, and membership registration features, improving community engagement and organizational visibility.",
+            "Developed reusable React components with Tailwind CSS utilities to ensure consistent design language, optimal performance across devices, and maintainable codebase architecture for future scalability.",
+            "Amplified visibility for women of color in technology at Northeastern University by creating an accessible, professional web presence that effectively communicates the organization's mission, initiatives, and impact.",
+            "Collaborated with club leadership to translate organizational goals into technical requirements, iterating on design and functionality based on stakeholder feedback to ensure the platform meets community needs."
+        ],
+        "role": "Web Developer",
+        "company": "Khoury SHEROS of Color",
+        "timeline": "October 2025 - Present",
+        "location": "Boston, Massachusetts, United States"
+    },
+    {
+        "experience": [
+            "Conducting advanced cybersecurity and networking research at MonIoTr Labs within Khoury College of Computer Sciences, analyzing real-time and archived network traffic from 100+ IoT devices deployed on the Sphere testbed infrastructure.",
+            "Performing deep packet inspection and comprehensive protocol analysis (DNS, TLS/SSL, HTTP/HTTPS, MQTT) using Wireshark and custom scripts to enable precise device fingerprinting and behavioral profiling of diverse IoT ecosystems.",
+            "Identifying security vulnerabilities, malicious behavior patterns, and potential attack vectors through systematic traffic pattern analysis, anomaly detection, and correlation of device communication behaviors across network layers.",
+            "Evaluating and enhancing the reliability, reproducibility, and data fidelity of the Sphere testbed environment, contributing to testbed stability improvements and ensuring high-quality research data collection for ongoing security studies.",
+            "Documenting findings and research methodologies to support academic publications and knowledge sharing within the lab, contributing to the broader understanding of IoT security challenges and mitigation strategies."
+        ],
+        "role": "Research Engineer",
+        "company": "MonIoTr Labs, Khoury College of Computer Sciences",
+        "timeline": "October 2025 - Present",
+        "location": "Boston, Massachusetts, United States"
+    },
+    {
         "experience" : [
             "Worked as a Software Engineer at IBM India Systems Development Labs (ISDL), the company's largest development hub, contributing to one of IBM's highest revenue-generating products built with Java and Spring, and playing a key role in core engineering and architecture overhauls.",
             "Played a key role in migrating the product architecture from OSGi (Virgo)-based Spring to a monolithic Spring Boot application, simplifying modular complexity and improving system stability by 25% through resolved dependency injection and rewritten shared services.",
