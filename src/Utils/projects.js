@@ -6,8 +6,25 @@ import palette from '../assets/palette.png'
 import glaucoma from '../assets/glaucoma.png'
 import covidImage from '../assets/covid-safe-room.png'
 import foodOrder from '../assets/foodOrder.jpg'
+import moveMind from '../assets/moveMind.png'
 
 export const projectsJson = [
+    {
+        "src": moveMind, 
+        "alt": "MoveMind",
+        "title":"MoveMind", 
+        "desc": [
+            "Developed MoveMind, a full-stack web application to streamline home moving by tracking moves, boxes, and items in a single interface.",
+            "Implemented QR code generation for each box so users can scan a code and instantly view the box’s contents and related move details.",
+            "Built a Node.js + Express REST API handling CRUD operations for moves, boxes, items, and addresses.",
+            "Connected the API to a MySQL database using the mysql2 library, with a relational schema for users, moves, boxes, and item inventories.",
+            "Created a React frontend with reusable components to view, create, and edit moves, boxes, and per-box item lists.",
+            "Added form validation and basic error handling to keep move, box, and item data consistent and prevent invalid operations.",
+            "Tested core flows end-to-end (creating a move, adding boxes, assigning items, scanning QR to view details) to ensure the app works as expected for a first-time user."
+        ],
+        "githubLink" : "https://github.com/SaiVarshini1410/MoveMind",
+        "hostedLink" : "https://github.com/SaiVarshini1410/MoveMind"
+    },
     {
         "src": trackIt, 
         "alt": "Track-It",
