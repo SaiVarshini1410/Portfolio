@@ -6,12 +6,32 @@ import palette from '../assets/palette.png'
 import glaucoma from '../assets/glaucoma.png'
 import covidImage from '../assets/covid-safe-room.png'
 import foodOrder from '../assets/foodOrder.jpg'
+import movemind from '../assets/movemind.png'
 
 export const projectsJson = [
     {
-        "src": trackIt, 
+        "src": movemind,
+        "alt": "MoveMind",
+        "title": "MoveMind",
+        "desc": [
+            "A full-stack moving organizer with a unified dashboard providing a real-time overview of the entire relocation process, eliminating fragmented tracking across disparate tools.",
+            "Built this using React 18, Node.js + Express REST API, MySql and JWT-based authentication.",
+            "Hierarchical room → box → item data model allowing granular inventory management for both origin and destination properties, with support for custom labels, status flags, and nested item lists.",
+            "Dynamic packing module featuring per-box checklists, fragile/high-value item tagging, photo attachments for visual content reference, and client-side generation of printable PDF box labels.",
+            "Integrated scheduler with a visual timeline view for managing appointments, mover bookings, property handovers, and service visits, backed by local reminders and exportable iCal support.",
+            "Dedicated utilities management section with predefined workflows for service transfers and cancellations (electricity, water, gas, internet, TV), including provider checklists and status tracking.",
+            "Secure file vault with encrypted upload handling for critical documents (leases, insurance policies, inventory PDFs, etc.), featuring drag-and-drop, preview thumbnails, and categorized organization.",
+            "Real-time progress engine calculating completion percentages at room, category, and overall levels, rendered via animated progress bars and milestone counters for immediate visual feedback.",
+            "Fully responsive React frontend built with mobile-first principles, ensuring seamless usability on low-screen devices during on-site packing and moving-day coordination.",
+            "Modular architecture designed for extensibility — future roadmap includes multi-user household sharing, push/email notifications, cost tracking, third-party calendar sync, and analytics dashboard."
+        ],
+        "githubLink": "https://github.com/SaiVarshini1410/MoveMind",
+        "hostedLink": "https://movemind.netlify.app/"
+    },
+    {
+        "src": trackIt,
         "alt": "Track-It",
-        "title":"Track-It", 
+        "title": "Track-It",
         "desc": [
             "Inspired by real placement-season chaos—designed to help students avoid missing interviews or callbacks due to poor tracking.",
             "A full-stack web application built using HTML, CSS, ReactJS for the frontend and Node.js, Express.js, MongoDB for the backend.",
@@ -28,13 +48,13 @@ export const projectsJson = [
             "Hosted the application on Heroku, ensuring easy access and deployment scalability.",
             "Gained full-cycle development experience including frontend/backend integration, API authentication, production deployment, and UI design.",
         ],
-        "githubLink" : "https://github.com/SaiVarshini1410/TrackIt",
-        "hostedLink" : "https://github.com/SaiVarshini1410/TrackIt"
+        "githubLink": "https://github.com/SaiVarshini1410/TrackIt",
+        "hostedLink": ""
     },
-    { 
-        "src": glaucoma, 
+    {
+        "src": glaucoma,
         "alt": "Automated Glaucoma Detection",
-        "title":"Automated Glaucoma Detection",
+        "title": "Automated Glaucoma Detection",
         "desc": [
             "Designed and developed a diagnostic ML tool for early-stage glaucoma detection using fundus eye images from the RIGA dataset (2,664 high-resolution retinal scans).",
             "Achieved a peak accuracy of 94% by implementing and evaluating multiple classification algorithms including CNN, SVM, and KNN, benchmarking them across various parameter spaces.",
@@ -46,13 +66,13 @@ export const projectsJson = [
             "This project strengthened my knowledge in computer vision, medical image processing, and AI for social good, and gave me experience in end-to-end research workflows — from ideation to publication.",
 
         ],
-        "githubLink" : "https://journal.esrgroups.org/jes/article/view/640",
-        "hostedLink" : "https://journal.esrgroups.org/jes/article/view/640"
+        "githubLink": "https://journal.esrgroups.org/jes/article/view/640",
+        "hostedLink": ""
     },
-    { 
+    {
         "src": palette,
-        "alt": "Spectrum", 
-        "title":"Spectrum", 
+        "alt": "Spectrum",
+        "title": "Spectrum",
         "desc": [
             "A fun and creative side project inspired by the \"Flat-UI Colors\" website — built to apply and experiment with the front-end skills I had been learning in React.",
             "Developed a responsive web app using ReactJS, Bootstrap, and JavaScript, allowing users to create, delete, and manage custom color palettes.",
@@ -64,13 +84,13 @@ export const projectsJson = [
             "This project was a blend of creativity and technical exploration — turning something simple into a hands-on playground for deeper learning.",
 
         ],
-        "githubLink" : "https://github.com/SaiVarshini1410/Spectrum",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Spectrum"
+        "githubLink": "https://github.com/SaiVarshini1410/Spectrum",
+        "hostedLink": ""
     },
-    { 
+    {
         "src": covidImage,
-        "alt": "Covid Safe Room", 
-        "title":"Covid Safe Room", 
+        "alt": "Covid Safe Room",
+        "title": "Covid Safe Room",
         "desc": [
             "A purpose-driven IoT project built during the height of the COVID-19 pandemic to automate room safety by monitoring body temperature and real-time occupancy, helping reduce virus spread.",
             "Designed using Arduino UNO, PIR sensors, a contactless MLX90614 infrared temperature sensor, an LCD display, and a servo motor to control door automation.",
@@ -83,13 +103,13 @@ export const projectsJson = [
             "One of my most fulfilling and timely projects, built not just as a tech experiment but as a genuine attempt to contribute to public health and safety.",
             "Reinforced my belief in the power of engineering when it directly meets human need — where lines of C code and wires on a breadboard can truly help save lives.",
         ],
-        "githubLink" : "https://github.com/SaiVarshini1410/Covid-Safe-Room",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Covid-Safe-Room"
+        "githubLink": "https://github.com/SaiVarshini1410/Covid-Safe-Room",
+        "hostedLink": ""
     },
-    { 
+    {
         "src": foodOrder,
-        "alt": "Online Food Ordering System", 
-        "title":"Online Food Ordering System", 
+        "alt": "Online Food Ordering System",
+        "title": "Online Food Ordering System",
         "desc": [
             "A pure Java-based console application designed to simulate a real-world food ordering system — allowing users to browse menus, place orders, and receive a final bill, without waiting in long queues.",
             "Built using core Java concepts like classes, inheritance, interfaces, and exception handling — structured across three main modules: Login, Restaurants, and Billing.",
@@ -99,7 +119,7 @@ export const projectsJson = [
             "Planned scope for enhancement includes integration with MySQL for persistent storage, a JavaFX or Swing-based GUI, and eventual deployment as a web app using Spring Boot.",
             "This project was a strong practice in building logic-heavy, modular applications from scratch, helping reinforce my confidence in Java fundamentals, clean architecture, and system extensibility.",
         ],
-        "githubLink" : "https://github.com/SaiVarshini1410/Online-Food-Ordering-System",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Online-Food-Ordering-System"
+        "githubLink": "https://github.com/SaiVarshini1410/Online-Food-Ordering-System",
+        "hostedLink": ""
     }
 ];
