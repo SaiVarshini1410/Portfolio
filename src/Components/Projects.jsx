@@ -42,7 +42,7 @@ function Projects() {
                       <div className='carasoul-project-title-cls'>
                         <div>{project.title}</div>
                         <div className='project-github-img'><a href={project.githubLink}><img src={github}/></a></div>
-                        {/* <div className='project-hosted-img'><a href={project.hostedLink}><img src={rocket}/></a></div> */}
+                        {project.hostedLink ? (<div className='project-hosted-img'><a href={project.hostedLink}><img src={rocket}/></a></div>) : null}
                         </div>
                       <div className='carasoul-project-desc-cls'>{project?.desc.map((descPoint,idx) => (
                         <ul className='custom-counter'><li>{descPoint}</li></ul>

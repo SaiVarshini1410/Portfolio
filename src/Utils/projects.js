@@ -23,7 +23,7 @@ export const projectsJson = [
             "Tested core flows end-to-end (creating a move, adding boxes, assigning items, scanning QR to view details) to ensure the app works as expected for a first-time user."
         ],
         "githubLink" : "https://github.com/SaiVarshini1410/MoveMind",
-        "hostedLink" : "https://github.com/SaiVarshini1410/MoveMind"
+        "hostedLink" : "https://movemind.netlify.app"
     },
     {
         "src": trackIt, 
@@ -46,7 +46,7 @@ export const projectsJson = [
             "Gained full-cycle development experience including frontend/backend integration, API authentication, production deployment, and UI design.",
         ],
         "githubLink" : "https://github.com/SaiVarshini1410/TrackIt",
-        "hostedLink" : "https://github.com/SaiVarshini1410/TrackIt"
+        "hostedLink" : ""
     },
     { 
         "src": glaucoma, 
@@ -64,7 +64,7 @@ export const projectsJson = [
 
         ],
         "githubLink" : "https://journal.esrgroups.org/jes/article/view/640",
-        "hostedLink" : "https://journal.esrgroups.org/jes/article/view/640"
+        "hostedLink" : ""
     },
     { 
         "src": palette,
@@ -82,7 +82,7 @@ export const projectsJson = [
 
         ],
         "githubLink" : "https://github.com/SaiVarshini1410/Spectrum",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Spectrum"
+        "hostedLink" : ""
     },
     { 
         "src": covidImage,
@@ -101,7 +101,7 @@ export const projectsJson = [
             "Reinforced my belief in the power of engineering when it directly meets human need — where lines of C code and wires on a breadboard can truly help save lives.",
         ],
         "githubLink" : "https://github.com/SaiVarshini1410/Covid-Safe-Room",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Covid-Safe-Room"
+        "hostedLink" : ""
     },
     { 
         "src": foodOrder,
@@ -117,6 +117,6 @@ export const projectsJson = [
             "This project was a strong practice in building logic-heavy, modular applications from scratch, helping reinforce my confidence in Java fundamentals, clean architecture, and system extensibility.",
         ],
         "githubLink" : "https://github.com/SaiVarshini1410/Online-Food-Ordering-System",
-        "hostedLink" : "https://github.com/SaiVarshini1410/Online-Food-Ordering-System"
+        "hostedLink" : ""
     }
 ];
