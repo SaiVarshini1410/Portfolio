@@ -3,23 +3,26 @@
         "instituion": "Northeastern University",
         "degree": "Master of Science",
         "field": "Computer Science",
-        "duration": "2025-Present",
+        "duration": "Sep 2025 - Present (Expected May 2027)",
         "location": "Boston, MA, USA",
         "grade": "CGPA: -",
         "coursework": [
             "Programming Design Paradigm",
-            "Database Management Systems"
+            "Database Management Systems",
+            "Algorithms",
+            "Cloud Computing"
         ]
     },
     {
         "instituion": "Vasavi College of Engineering",
         "degree": "Bachelor of Engineering",
         "field": "Computer Science and Engineering",
-        "duration": "2019-2023",
+        "duration": "June 2019 - May 2023",
         "location": "India",
         "grade": "CGPA: 3.7/4.0",
         "coursework": [
-            "Deisgn Analysis and Algorithms",
+            "Design Analysis and Algorithms",
+            "Data Structures and Algorithms",
             "Database Management Systems",
             "Software Engineering",
             "Machine Learning",

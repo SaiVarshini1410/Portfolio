@@ -9,20 +9,20 @@
         ],
         "role": "Web Developer",
         "company": "Khoury SHEROS of Color",
-        "timeline": "October 2025 - Present",
+        "timeline": "October 2025 - Jan 2026",
         "location": "Boston, Massachusetts, United States"
     },
     {
         "experience": [
-            "Conducting advanced cybersecurity and networking research at MonIoTr Labs within Khoury College of Computer Sciences, analyzing real-time and archived network traffic from 100+ IoT devices deployed on the Sphere testbed infrastructure.",
-            "Performing deep packet inspection and comprehensive protocol analysis (DNS, TLS/SSL, HTTP/HTTPS, MQTT) using Wireshark and custom scripts to enable precise device fingerprinting and behavioral profiling of diverse IoT ecosystems.",
-            "Identifying security vulnerabilities, malicious behavior patterns, and potential attack vectors through systematic traffic pattern analysis, anomaly detection, and correlation of device communication behaviors across network layers.",
-            "Evaluating and enhancing the reliability, reproducibility, and data fidelity of the Sphere testbed environment, contributing to testbed stability improvements and ensuring high-quality research data collection for ongoing security studies.",
-            "Documenting findings and research methodologies to support academic publications and knowledge sharing within the lab, contributing to the broader understanding of IoT security challenges and mitigation strategies."
+            "Conducted advanced cybersecurity and networking research at MonIoTr Labs within Khoury College of Computer Sciences, analyzing real-time and archived network traffic from 100+ IoT devices deployed on the Sphere testbed infrastructure.",
+            "Performed deep packet inspection and comprehensive protocol analysis (DNS, TLS/SSL, HTTP/HTTPS, MQTT) using Wireshark and custom scripts to enable precise device fingerprinting and behavioral profiling of diverse IoT ecosystems.",
+            "Identified security vulnerabilities, malicious behavior patterns, and potential attack vectors through systematic traffic pattern analysis, anomaly detection, and correlation of device communication behaviors across network layers.",
+            "Evaluated and enhanced the reliability, reproducibility, and data fidelity of the Sphere testbed environment, contributing to testbed stability improvements and ensuring high-quality research data collection for ongoing security studies.",
+            "Documented findings and research methodologies to support academic publications and knowledge sharing within the lab, contributing to the broader understanding of IoT security challenges and mitigation strategies."
         ],
         "role": "Research Engineer",
         "company": "MonIoTr Labs, Khoury College of Computer Sciences",
-        "timeline": "October 2025 - Present",
+        "timeline": "October 2025 - Dec 2025",
         "location": "Boston, Massachusetts, United States"
     },
     {
